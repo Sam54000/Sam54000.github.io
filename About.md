@@ -23,10 +23,9 @@ playing around with my 3 RaspberryPi.
 I love nature and try my best to orient all my actions 
 toward the protection of our planet. 
 
-# What "SystemD"?
+**What is "SystemD"?**
 The name has 2 origins:
-1. The name comes from a french expression "Système D" for "Système débrouille" 
-which is a big part of the french culture. 
+1. The name comes from a french expression "Système D" for "Système débrouille" which is a big part of the french culture. 
 It means that, when facing challenges, you can put together a solution 
 with only the few resssources that are available to you. 
 As a former military (Gendarme) I heard,and applied this term A LOT!. 
@@ -38,6 +37,3 @@ Here are some nice resources that explain very well "Système D":
 
 2. systemd in GNU/Linux is a system and service manager: 
 - [systemd official website](https://www.freedesktop.org/wiki/Software/systemd/)
-- [systemd documentation](https://www.freedesktop.org/wiki/Software/systemd/)
-- [systemd tutorial](https://www.freedesktop.org/wiki/Software/systemd/Tutorial/)
-- [systemd tutorial from the Fedora project](https://fedoraproject.org/wiki/Systemd_for_Administrators)

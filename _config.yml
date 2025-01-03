@@ -1,10 +1,13 @@
-remote_theme: jekyll/minima
-minima:
-    skin: dark
 title: SystemD
 email: samuel.louviot.eng@gmail.com
-github_username: Sam54000
-author: Samuel Louviot, PhD
+author: 
+  name: Samuel Louviot, PhD
+  email: samuel.louviot.eng@gmail.com
+  github_username: Sam54000
+  
+theme: minima
+minima:
+    skin: dark
 description: A place where I can put my thoughts, some tips and advice in neural engineering and other stuff.
 header_pages:
   - Home.md
