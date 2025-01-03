@@ -4,16 +4,15 @@ author:
   name: Samuel Louviot, PhD
   email: samuel.louviot.eng@gmail.com
   github_username: Sam54000
-  
+
 theme: minima
 minima:
     skin: dark
 description: A place where I can put my thoughts, some tips and advice in neural engineering and other stuff.
 header_pages:
-  - Home.md
-  - About.md
-  - Contact.md
-  - Blog.md
+  - about.md
+  - contact.md
+  - blog.html
 paginate: 5
 paginate_path: "/blog/page:num/"
 plugins:
