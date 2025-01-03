@@ -1,7 +1,7 @@
 ---
+layout: post
 title: "Why Did I Choose to Animate My Plots?"
 date: 2025-01-04
-layout: post
 categories: [Data Visualization, Machine Learning]
 tags: [animation, plots, EEG, fMRI]
 ---

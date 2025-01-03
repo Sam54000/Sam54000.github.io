@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SystemD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minima/2.5.1/minima.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to SystemD</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.md">Home</a></li>
+                <li><a href="About.md">About</a></li>
+                <li><a href="Blog.md">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Latest Posts</h2>
+            <div class="posts">
+                {% for post in site.posts %}
+                <article class="post">
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <p>{{ post.excerpt }}</p>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 SystemD. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
