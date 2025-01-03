@@ -1,6 +1,9 @@
 ---
 title: "Why Did I Choose to Animate My Plots?"
 date: 2025-01-04
+layout: post
+categories: [Data Visualization, Machine Learning]
+tags: [animation, plots, EEG, fMRI]
 ---
 # Introduction/Context
 I am working on a project that aims to develop machine learning models to predict brain states from electroencephalography data. By brain-states, I refer to co-activation patterns obtained from fMRI recordings (BOLD signal) during specific cognitive tasks (e.g., video viewing, Steady State Visual Evoked Potentials (SSVEP), etc.).

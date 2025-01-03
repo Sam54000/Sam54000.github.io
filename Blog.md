@@ -1,9 +1,10 @@
 ---
 title: Blog
+layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site._posts %}
     <article class="post">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <div class="date">
