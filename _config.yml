@@ -1,0 +1,18 @@
+remote_theme: jekyll/minima
+minima:
+    skin: dark
+title: SystemD
+email: samuel.louviot.eng@gmail.com
+github_username: Sam54000
+author: Samuel Louviot, PhD
+description: A place where I can put my thoughts, some tips and advice in neural engineering and other stuff.
+header_pages:
+  - Home.md
+  - About.md
+  - Contact.md
+  - Blog.md
+paginate: 5
+paginate_path: "/blog/page:num/"
+plugins:
+  - jekyll-paginate
+
