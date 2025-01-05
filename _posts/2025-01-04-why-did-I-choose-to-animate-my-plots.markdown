@@ -4,7 +4,7 @@ title:  "Why did I choose to animate my plots?"
 date:   2025-01-04 17:05:26 -0500
 categories: jekyll update
 ---
-# Introduction/Context
+### Introduction/Context
 I am working on a project that aims to develop machine learning models to predict brain states from electroencephalography data. By brain-states, I refer to co-activation patterns obtained from fMRI recordings (BOLD signal) during specific cognitive tasks (e.g., video viewing, Steady State Visual Evoked Potentials (SSVEP), etc.).
 
 fMRI offers good spatial resolution but poor temporal resolution. On the other hand, electroencephalography provides great temporal resolution but very poor spatial resolution, as it only captures the brain's electrical activity from the surface.
@@ -13,7 +13,7 @@ It would be amazing to obtain the same information from EEG as we do from fMRI. 
 
 The purpose of this post is to explain how and why I animated the data plots. Therefore, I will not delve deeply into details about data pre-processing, model training, feature selection, and the rationale behind these choices. These topics might be covered in another post.
 
-# The Data
+### The Data
 Despite my intention to keep this post simple, I still need to provide some context about the data.
 
 ## Subjects
