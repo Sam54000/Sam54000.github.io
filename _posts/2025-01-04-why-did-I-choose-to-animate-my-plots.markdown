@@ -16,10 +16,11 @@ On the other hand, electroencephalography provides great temporal resolution
 but very poor spatial resolution, as it only captures the brain's electrical 
 activity from the surface.
 
-It would be amazing to obtain the same information from EEG as we do from 
+So the purpose is to obtain the same information from EEG as we have from 
 fMRI. This is a very simplified way to put it.
 
-The purpose of this post is to explain how and why I animated the data plots. 
+The purpose of this post is to explain how and why I chose to animated 
+my plots. 
 Therefore, I will not delve deeply into details about data pre-processing, 
 model training, feature selection, and the rationale behind these choices. 
 These topics might be covered in another post.
@@ -55,7 +56,13 @@ Data were organized into [`numpy`](https://numpy.org/doc/stable/reference/arrays
 ## The Challenge
 The data has been trained in a leave-one-out cross-validation manner. 
 This means that for each subject, the model is trained on the remaining 
-21 subjects and then tested on the subject itself.
+21 subjects and then tested on the subject itself ([Scikit Learn Cross Validation Leave One Out](https://scikit-learn.org/stable/modules/cross_validation.html#leave-one-out-loo)).
+
+<figure>
+  <img src="https://scikit-learn.org/stable/_images/grid_search_cross_validation.png" alt="Cross Validation Schema">
+  <figcaption>K-fold cross validation concept from Sickit Learn</figcaption>
+</figure>
+
 This cross-validation was performed for all subjects, each brain-state,
 each frequency band and each electrodes. We chose to evaluate the model's 
 performance by looking at the correlation between the predicted and real 
@@ -66,19 +73,21 @@ The challenge is to visualize these the correlations values (x-axis) for
 each subject, brain-state, frequency band, and electrode (y-axis) in a boxplot.
 
 ## The Solution
+# Bruteforce
 Let's start with the brutforce solution which is to make a big PDF and plot the
 boxplots for each brainstate and frequency band pair. This would give us a PDF
 with 8 * 39 = 312 pages. This is not that bad: my managers would receive 1 PDF
 file instead of 312 individual png files! But let's be honest, it's not fun
 to scroll through the PDF.
 
+[Figures in Pdf without animation](../docs/assets/images/animated_pdf_gif.gif)
+
+# Animate the plot!
 The second solution is to animate the plot which has several advantages: 
 1. It gives the opportunity to have a general view of the data in seconds.
 2. The UI video cursor can be used to navigate through the data.
 3. It is the optimal solution to export. We don't need to recompute the figure
-at every cursor update (unlike other solutions). Which is also inconvenient 
-if something is wrong with data processing, then you just realize after
-plotting (that could take several minutes).
+at every cursor update (unlike other solutions such as using matplotlib cursor). 
 
 Here is the idea to plot and save the animation in a mp4 format:
 
@@ -148,3 +157,6 @@ ani = FuncAnimation(fig, animate, interval=100, frames = len(df_freq_cap))
 ani.save(f'animation_boxplot_custom_bands_{task}.mp4', writer='ffmpeg')
 plt.show()
 ```
+
+Here is the result!:
+[Result of Animated Plot](../docs/assets/images/animated_animation_figures_gif.gif)
