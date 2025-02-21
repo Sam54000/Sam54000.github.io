@@ -40,7 +40,7 @@ permalink: /about/
     </div>
     <div class="tui-section-content">
         As I said above, I am passionate about science and engineering, 
-        learning, coding, soldering. My wife love saying: "New Obsession Unlocked"
+        learning, coding, soldering. My wife loves saying: "New Obsession Unlocked"
         when she sees me browsing <a href="https://www.adafruit.com/">adafruit</a> 
         or considering buying a 5th Raspberry Pi 
         (Well... Come on! It's the new Raspberry Pi 5!! I can't say no!).
