@@ -3,12 +3,12 @@ layout: terminal
 ---
 
 <div class="command-block">
-    <span class="prompt">samuel@louviot</span>:<span class="path">~/posts</span>$ <span class="command">cat {{ page.title | downcase | replace: ' ', '_' }}.md</span>
+    <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~/posts</span>$ <span class="command">cat {{ page.title | downcase | replace: ' ', '_' }}.md</span>
 </div>
 
 <div class="metadata-block command-output">
     <div class="command-block">
-        <span class="prompt">samuel@louviot</span>:<span class="path">~/posts</span>$ <span class="command">stat {{ page.title | downcase | replace: ' ', '_' }}.md</span>
+        <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~/posts</span>$ <span class="command">stat {{ page.title | downcase | replace: ' ', '_' }}.md</span>
     </div>
     <div class="command-output">
         Created: {{ page.date | date: "%Y-%m-%d %H:%M" }}
@@ -21,7 +21,7 @@ layout: terminal
 
     {% if page.tags.size > 0 %}
     <div class="command-block">
-        <span class="prompt">samuel@louviot</span>:<span class="path">~/posts</span>$ <span class="command">ls tags/</span>
+        <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~/posts</span>$ <span class="command">ls tags/</span>
     </div>
     <div class="command-output tags">
         {% for tag in page.tags %}
@@ -38,7 +38,7 @@ layout: terminal
 <div class="navigation command-output">
     {% if page.previous.url or page.next.url %}
     <div class="command-block">
-        <span class="prompt">samuel@louviot</span>:<span class="path">~/posts</span>$ <span class="command">ls related_posts/</span>
+        <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~/posts</span>$ <span class="command">ls related_posts/</span>
     </div>
     <div class="command-output">
         {% if page.previous.url %}
