@@ -8,7 +8,7 @@ title: Home
 
 <div class="tui-section">
     <div class="tui-section-header">
-        Profile
+        >_ Profile
     </div>
     <div class="tui-section-content">
         <strong>Samuel Louviot</strong>
@@ -21,7 +21,7 @@ title: Home
 
 <div class="tui-section">
     <div class="tui-section-header">
-        Latest Projects
+        >_ Latest Projects
     </div>
     <div class="tui-section-content">
         {% for project in site.data.projects limit:3 %}
@@ -35,7 +35,7 @@ title: Home
 
 <div class="tui-section">
     <div class="tui-section-header">
-        Recent Posts
+        >_ Recent Posts
     </div>
     <div class="tui-section-content">
         {% for post in site.posts limit:5 %}
@@ -49,7 +49,7 @@ title: Home
 
 <div class="tui-section">
     <div class="tui-section-header">
-        Contact Information
+        >_ Contact Information
     </div>
     <div class="tui-section-content">
         <div class="contact-item">Email: <a href="mailto:samuel.louviot@pm.me">samuel.louviot@pm.me</a></div>
@@ -69,7 +69,7 @@ title: Home
 }
 
 .project-name, .post-title {
-    color: var(--blue);
+    color: var(--dark-green);
 }
 
 .project-desc {
@@ -77,6 +77,6 @@ title: Home
 }
 
 .contact-item a {
-    color: var(--blue);
+    color: var(--dark-green);
 }
 </style>

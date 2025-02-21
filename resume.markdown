@@ -9,7 +9,7 @@ permalink: /resume/
         Download Resume
     </div>
     <div class="tui-section-content">
-        <a href="/resume_samuel_louviot.pdf" class="pdf-link"><strong class="highlight">📄 Download PDF version</strong></a>
+        <a href="/resume_samuel_louviot.pdf" class="pdf-link"><strong class="highlight">📄 Download PDF version</strong></a> (put your sunglasses 😎, it is not in dark mode)
     </div>
 </div>
 

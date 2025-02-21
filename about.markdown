@@ -37,7 +37,7 @@ permalink: /about/
         <ul>
             <li>Master's degree in Biomedical Engineering, Cybernetics, Robotics, Softwares and Imaging for Medicine</li>
             <li>Bachelor's degree in Biomedical Engineering</li> 
-            <li>Associate's degree in Electrical Engineering</li?>
+            <li>Associate's degree in Electrical Engineering</li>
         </ul>
         But above all, what makes me an engineer is my passion and love for technology, science, tweaking, creating, building, fixing, improving, optimizing, soldering, coding, solving problems. It is my thirst to understand how systems work, always scribbling schematics on a sheets of papers trying to make better system for everything. And finally, what makes me an engineer is my biggest passion: Learning.
     </div>
