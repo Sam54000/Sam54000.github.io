@@ -2,58 +2,68 @@
 layout: terminal
 ---
 
-<div class="command-block">
-    <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~/posts</span>$ <span class="command">cat {{ page.title | downcase | replace: ' ', '_' }}.md</span>
-</div>
-
-<div class="metadata-block command-output">
-    <div class="command-block">
-        <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~/posts</span>$ <span class="command">stat {{ page.title | downcase | replace: ' ', '_' }}.md</span>
+<div class="tui-section">
+    <div class="tui-section-header">
+        Post Information
     </div>
-    <div class="command-output">
-        Created: {{ page.date | date: "%Y-%m-%d %H:%M" }}
+    <div class="tui-section-content post-metadata">
+        <div class="metadata-item">Created: {{ page.date | date: "%Y-%m-%d %H:%M" }}</div>
         {% if page.last_modified_at %}
-        Modified: {{ page.last_modified_at | date: "%Y-%m-%d %H:%M" }}
+        <div class="metadata-item">Modified: {{ page.last_modified_at | date: "%Y-%m-%d %H:%M" }}</div>
         {% endif %}
         {% assign words = content | number_of_words %}
-        Size: {{ words }} words (~{{ words | divided_by: 180 | plus: 1 }} min read)
+        <div class="metadata-item">Size: {{ words }} words (~{{ words | divided_by: 180 | plus: 1 }} min read)</div>
+        
+        {% if page.tags.size > 0 %}
+        <div class="metadata-item">
+            Tags: 
+            {% for tag in page.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
     </div>
-
-    {% if page.tags.size > 0 %}
-    <div class="command-block">
-        <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~/posts</span>$ <span class="command">ls tags/</span>
-    </div>
-    <div class="command-output tags">
-        {% for tag in page.tags %}
-        <span class="tag">{{ tag }}</span>
-        {% endfor %}
-    </div>
-    {% endif %}
 </div>
 
-<article class="post command-output">
-    {{ content }}
-</article>
-
-<div class="navigation command-output">
-    {% if page.previous.url or page.next.url %}
-    <div class="command-block">
-        <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~/posts</span>$ <span class="command">ls related_posts/</span>
+<div class="tui-section">
+    <div class="tui-section-header">
+        {{ page.title }}
     </div>
-    <div class="command-output">
+    <div class="tui-section-content post-content">
+        {{ content }}
+    </div>
+</div>
+
+{% if page.previous.url or page.next.url %}
+<div class="tui-section">
+    <div class="tui-section-header">
+        Navigation
+    </div>
+    <div class="tui-section-content post-navigation">
         {% if page.previous.url %}
-        <div>previous: <a href="{{page.previous.url}}">{{ page.previous.title }}</a></div>
+        <div class="nav-item">
+            <span class="nav-label">Previous:</span>
+            <a href="{{page.previous.url}}">{{ page.previous.title }}</a>
+        </div>
         {% endif %}
         {% if page.next.url %}
-        <div>next: <a href="{{page.next.url}}">{{ page.next.title }}</a></div>
+        <div class="nav-item">
+            <span class="nav-label">Next:</span>
+            <a href="{{page.next.url}}">{{ page.next.title }}</a>
+        </div>
         {% endif %}
     </div>
-    {% endif %}
 </div>
+{% endif %}
 
 <style>
-    .metadata-block {
-        margin-bottom: 2rem;
+    .post-metadata {
+        font-size: 0.9rem;
+    }
+
+    .metadata-item {
+        margin-bottom: 0.5rem;
+        color: var(--gray);
     }
 
     .tag {
@@ -62,45 +72,98 @@ layout: terminal
         margin-right: 1rem;
     }
 
-    .post {
-        margin: 2rem 0;
+    .post-content {
+        line-height: 1.8;
     }
 
-    .post img {
+    .post-content p {
+        margin-bottom: 1.5rem;
+    }
+
+    .post-content img {
         max-width: 100%;
         height: auto;
-        margin: 1rem 0;
+        margin: 1.5rem 0;
+        border: 1px solid var(--gray);
     }
 
-    .navigation {
-        margin-top: 3rem;
-    }
-
-    blockquote {
+    .post-content blockquote {
         border-left: 3px solid var(--pink);
         padding-left: 1rem;
-        margin: 1rem 0;
+        margin: 1.5rem 0;
         color: var(--gray);
     }
 
-    .post ul, .post ol {
-        margin-left: 2rem;
-        margin-bottom: 1rem;
+    .post-content ul, 
+    .post-content ol {
+        margin: 1rem 0 1.5rem 2rem;
     }
 
-    table {
+    .post-content li {
+        margin-bottom: 0.5rem;
+    }
+
+    .post-content h2, 
+    .post-content h3, 
+    .post-content h4 {
+        color: var(--green);
+        margin: 2rem 0 1rem 0;
+    }
+
+    .post-navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-item {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .nav-label {
+        color: var(--gray);
+        min-width: 80px;
+    }
+
+    /* Code block styling */
+    .post-content pre {
+        background-color: var(--bg);
+        padding: 1rem;
+        margin: 1.5rem 0;
+        overflow-x: auto;
+        border: 1px solid var(--gray);
+    }
+
+    .post-content code {
+        background-color: var(--bg);
+        padding: 0.2rem 0.4rem;
+        color: var(--pink);
+        font-size: 0.9em;
+    }
+
+    /* Table styling */
+    .post-content table {
         width: 100%;
         border-collapse: collapse;
-        margin: 1rem 0;
+        margin: 1.5rem 0;
+        border: 1px solid var(--gray);
     }
 
-    th, td {
+    .post-content th,
+    .post-content td {
         padding: 0.5rem;
         border: 1px solid var(--gray);
     }
 
-    th {
-        background-color: var(--bg-soft);
+    .post-content th {
+        background-color: var(--bg);
         color: var(--green);
+        font-weight: 500;
+    }
+
+    .post-content tr:nth-child(even) {
+        background-color: var(--bg);
     }
 </style> 

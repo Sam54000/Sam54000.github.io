@@ -17,4 +17,4 @@ dirty little rat waiting for crumbs to fall from their ivory tower.
 We spend hours filling on platforms our educations, diplomas, work experience, 
 clicking, selecting and re clicking and typing and... Oh no I can't put more 
 than 50 characters in this job experience#3... Anyway we have all been there.
-So our 
+Enters the automated CV parser, Alleluhia!
