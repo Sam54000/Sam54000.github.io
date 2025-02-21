@@ -10,17 +10,13 @@
     <style>
         :root {
             /* Gruvbox Dark Colors */
-            --bg: #282828;
-            --bg-soft: #32302f;
-            --fg: #ebdbb2;
-            --red: #cc241d;
-            --green: #98971a;
-            --yellow: #d79921;
-            --blue: #458588;
-            --purple: #b16286;
-            --aqua: #689d6a;
-            --gray: #928374;
-            --orange: #d65d0e;
+            --bg: #000000;
+            --bg-soft: #0d0d0d;
+            --fg: #ffffff;
+            --green: #0f0;
+            --blue: #0bc;
+            --pink: #ff0096;
+            --gray: #888888;
         }
 
         * {
@@ -35,63 +31,41 @@
             color: var(--fg);
             line-height: 1.6;
             padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 750px;
+            margin: 100px auto;
         }
 
         .terminal-window {
-            background-color: var(--bg-soft);
-            border: 2px solid var(--gray);
-            border-radius: 5px;
-            padding: 1rem;
             margin-bottom: 2rem;
         }
 
-        .terminal-header {
-            border-bottom: 1px solid var(--gray);
-            padding-bottom: 1rem;
-            margin-bottom: 1rem;
+        .command-block {
+            margin-bottom: 1.5rem;
         }
 
         .prompt {
             color: var(--green);
         }
 
-        .cursor {
-            display: inline-block;
-            width: 8px;
-            height: 1em;
-            background-color: var(--fg);
-            animation: blink 1s step-end infinite;
+        .path {
+            color: var(--pink);
         }
 
-        @keyframes blink {
-            50% { opacity: 0; }
+        .command {
+            color: var(--blue);
         }
 
-        nav {
-            margin: 2rem 0;
-        }
-
-        nav a {
+        a {
             color: var(--blue);
             text-decoration: none;
-            margin-right: 1.5rem;
-            position: relative;
         }
 
-        nav a:hover {
-            color: var(--aqua);
-        }
-
-        nav a::before {
-            content: '>';
-            color: var(--green);
-            margin-right: 0.5rem;
+        a:hover {
+            text-decoration: underline;
         }
 
         h1, h2, h3 {
-            color: var(--yellow);
+            color: var(--green);
             margin: 1.5rem 0 1rem 0;
         }
 
@@ -99,69 +73,54 @@
             margin-bottom: 1rem;
         }
 
-        .post-list {
-            list-style: none;
-        }
-
-        .post-list li {
-            margin-bottom: 1rem;
-        }
-
-        .post-date {
-            color: var(--gray);
-        }
-
-        .post-link {
-            color: var(--blue);
-            text-decoration: none;
-        }
-
-        .post-link:hover {
-            color: var(--aqua);
-        }
-
-        footer {
-            margin-top: 3rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--gray);
-            color: var(--gray);
-            font-size: 0.9rem;
+        .content-block {
+            margin: 1rem 0;
         }
 
         code {
-            background-color: var(--bg);
+            background-color: var(--bg-soft);
             padding: 0.2rem 0.4rem;
             border-radius: 3px;
+            color: var(--pink);
         }
 
         pre {
-            background-color: var(--bg);
+            background-color: var(--bg-soft);
             padding: 1rem;
             border-radius: 5px;
             overflow-x: auto;
             margin: 1rem 0;
         }
+
+        footer {
+            margin-top: 3rem;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .command-output {
+            padding-left: 1rem;
+            margin: 0.5rem 0;
+        }
     </style>
 </head>
 <body>
     <div class="terminal-window">
-        <div class="terminal-header">
-            <span class="prompt">guest@{{ site.title }}:~$</span> cat {{ page.title | downcase }}.txt
+        <div class="command-block">
+            <span class="prompt">samuel@louviot</span>:<span class="path">~</span>$ <span class="command">cd {{ page.title | downcase }}</span>
         </div>
-        <div class="terminal-content">
+        <div class="command-block">
+            <span class="prompt">samuel@louviot</span>:<span class="path">~/{{ page.title | downcase }}</span>$ <span class="command">cat content.txt</span>
+        </div>
+        <div class="command-output">
             {{ content }}
         </div>
     </div>
 
-    <nav>
-        <a href="/">home</a>
-        <a href="/about">about</a>
-        <a href="/blog">blog</a>
-        <a href="/projects">projects</a>
-    </nav>
-
     <footer>
-        <p>© {{ site.time | date: '%Y' }} {{ site.title }} | Built with <span style="color: var(--red);">♥</span> using Jekyll</p>
+        <div class="command-block">
+            <span class="prompt">samuel@louviot</span>:<span class="path">~</span>$ <span class="command">echo "© {{ site.time | date: '%Y' }} Samuel Louviot"</span>
+        </div>
     </footer>
 </body>
 </html> 

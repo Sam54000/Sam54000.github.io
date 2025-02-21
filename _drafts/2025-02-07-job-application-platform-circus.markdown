@@ -10,5 +10,11 @@ I am going to talk about the latter as a former job seeker for a
 Software Engineering position. A lot of the quirkiness made me sigh very loudly
 and some of them gave me a little laugh. I gathered here the top bizarrerie
 from my own collection and I encourage people to do the same to put under the 
-spotlight the hypocrisy of some almighty company looking at us, poor 
-dirty little rat waiting for crumbs to fall of their ivory tower.
+spotlight the hypocrisy of some almighty company looking down at us, poor 
+dirty little rat waiting for crumbs to fall from their ivory tower.
+
+# The Magical CV Parser
+We spend hours filling on platforms our educations, diplomas, work experience, 
+clicking, selecting and re clicking and typing and... Oh no I can't put more 
+than 50 characters in this job experience#3... Anyway we have all been there.
+So our 
