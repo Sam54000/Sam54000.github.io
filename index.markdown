@@ -6,56 +6,60 @@ layout: terminal
 title: Home
 ---
 
-<div class="command-block">
-    <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~</span>$ <span class="command">whoami</span>
-</div>
-<div class="command-output">
-Samuel Louviot
-Scientific Software Engineer | Neural Engineer
-</div>
-
-<div class="command-block">
-    <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~</span>$ <span class="command">cat about.txt</span>
-</div>
-<div class="command-output">
-I'm a Scientific Software Engineer specializing in Neural Engineering. I build tools and applications that bridge the gap between neuroscience and technology.
+<div class="tui-section">
+    <div class="tui-section-header">
+        Profile
+    </div>
+    <div class="tui-section-content">
+        <strong>Samuel Louviot</strong>
+        <br>
+        Scientific Software Engineer | Neural Engineer
+        <br><br>
+        I'm a Scientific Software Engineer specializing in Neural Engineering. I build tools and applications that bridge the gap between neuroscience and technology.
+    </div>
 </div>
 
-<div class="command-block">
-    <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~</span>$ <span class="command">ls projects/</span>
-</div>
-<div class="command-output">
-{% for project in site.data.projects limit:3 %}
-<div class="project-item">
-    <span class="project-name"><a href="{{ project.url }}">{{ project.name }}</a></span>
-    <span class="project-desc">- {{ project.description }}</span>
-</div>
-{% endfor %}
-</div>
-
-<div class="command-block">
-    <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~</span>$ <span class="command">ls posts/</span>
-</div>
-<div class="command-output">
-{% for post in site.posts limit:5 %}
-<div class="post-item">
-    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-    <span class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></span>
-</div>
-{% endfor %}
+<div class="tui-section">
+    <div class="tui-section-header">
+        Latest Projects
+    </div>
+    <div class="tui-section-content">
+        {% for project in site.data.projects limit:3 %}
+        <div class="project-item">
+            <span class="project-name"><a href="{{ project.url }}">{{ project.name }}</a></span>
+            <span class="project-desc">- {{ project.description }}</span>
+        </div>
+        {% endfor %}
+    </div>
 </div>
 
-<div class="command-block">
-    <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~</span>$ <span class="command">cat contact.txt</span>
+<div class="tui-section">
+    <div class="tui-section-header">
+        Recent Posts
+    </div>
+    <div class="tui-section-content">
+        {% for post in site.posts limit:5 %}
+        <div class="post-item">
+            <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+            <span class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></span>
+        </div>
+        {% endfor %}
+    </div>
 </div>
-<div class="command-output">
-Email: samuel.louviot@pm.me
-GitHub: <a href="https://github.com/Sam54000">Sam54000</a>
-LinkedIn: <a href="https://www.linkedin.com/in/samuel-louviot">samuel-louviot</a>
+
+<div class="tui-section">
+    <div class="tui-section-header">
+        Contact Information
+    </div>
+    <div class="tui-section-content">
+        <div class="contact-item">Email: <a href="mailto:samuel.louviot@pm.me">samuel.louviot@pm.me</a></div>
+        <div class="contact-item">GitHub: <a href="https://github.com/Sam54000">Sam54000</a></div>
+        <div class="contact-item">LinkedIn: <a href="https://www.linkedin.com/in/samuel-louviot">samuel-louviot</a></div>
+    </div>
 </div>
 
 <style>
-.project-item, .post-item {
+.project-item, .post-item, .contact-item {
     margin-bottom: 0.5rem;
 }
 
@@ -67,3 +71,12 @@ LinkedIn: <a href="https://www.linkedin.com/in/samuel-louviot">samuel-louviot</a
 .project-name, .post-title {
     color: var(--blue);
 }
+
+.project-desc {
+    color: var(--fg);
+}
+
+.contact-item a {
+    color: var(--blue);
+}
+</style>

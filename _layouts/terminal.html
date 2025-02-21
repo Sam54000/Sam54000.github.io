@@ -31,28 +31,71 @@
             color: var(--fg);
             line-height: 1.6;
             padding: 2rem;
-            max-width: 750px;
+            max-width: 900px;
             margin: 100px auto;
         }
 
-        .terminal-window {
+        .tui-window {
+            border: 1px solid var(--gray);
+            border-radius: 0px;
+            overflow: hidden;
+        }
+
+        .tui-titlebar {
+            background-color: var(--blue);
+            color: var(--bg);
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tui-titlebar-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .tui-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 0px;
+            border: 1px solid var(--bg);
+        }
+
+        .tui-close { background-color: var(--pink); }
+        .tui-minimize { background-color: var(--gray); }
+        .tui-maximize { background-color: var(--green); }
+
+        .tui-content {
+            padding: 1.5rem;
+            background-color: var(--bg-soft);
+        }
+
+        .tui-section {
             margin-bottom: 2rem;
+            border: 1px solid var(--gray);
+            border-radius: 0px;
         }
 
-        .command-block {
-            margin-bottom: 1.5rem;
+        .tui-section-header {
+            background-color: var(--gray);
+            color: var(--bg);
+            padding: 0.3rem 1rem;
+            font-weight: 500;
         }
 
-        .prompt {
-            color: var(--green);
+        .tui-section-content {
+            padding: 1rem;
         }
 
-        .path {
-            color: var(--pink);
-        }
-
-        .command {
-            color: var(--blue);
+        .tui-statusbar {
+            background-color: var(--blue);
+            color: var(--bg);
+            padding: 0.3rem 1rem;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
         }
 
         a {
@@ -73,54 +116,72 @@
             margin-bottom: 1rem;
         }
 
-        .content-block {
-            margin: 1rem 0;
-        }
-
         code {
-            background-color: var(--bg-soft);
+            background-color: var(--bg);
             padding: 0.2rem 0.4rem;
-            border-radius: 3px;
+            border-radius: 0px;
             color: var(--pink);
         }
 
         pre {
-            background-color: var(--bg-soft);
+            background-color: var(--bg);
             padding: 1rem;
-            border-radius: 5px;
+            border-radius: 0px;
             overflow-x: auto;
             margin: 1rem 0;
-        }
-
-        footer {
-            margin-top: 3rem;
-            color: var(--gray);
-            font-size: 0.9rem;
         }
 
         .command-output {
             padding-left: 1rem;
             margin: 0.5rem 0;
         }
+
+        .tui-menu {
+            display: flex;
+            gap: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: var(--gray);
+            margin-bottom: 1rem;
+        }
+
+        .tui-menu a {
+            color: var(--bg);
+            text-decoration: none;
+            padding: 0.2rem 0.5rem;
+        }
+
+        .tui-menu a:hover {
+            background-color: var(--bg);
+            color: var(--gray);
+        }
     </style>
 </head>
 <body>
-    <div class="terminal-window">
-        <div class="command-block">
-            <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~</span>$ <span class="command">cd {{ page.title | downcase }}</span>
+    <div class="tui-window">
+        <div class="tui-titlebar">
+            <div>samuel.louviot.site - {{ page.title }}</div>
+            <div class="tui-titlebar-buttons">
+                <div class="tui-button tui-minimize"></div>
+                <div class="tui-button tui-maximize"></div>
+                <div class="tui-button tui-close"></div>
+            </div>
         </div>
-        <div class="command-block">
-            <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~/{{ page.title | downcase }}</span>$ <span class="command">cat content.txt</span>
+
+        <div class="tui-menu">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+            <a href="/projects">Projects</a>
         </div>
-        <div class="command-output">
+
+        <div class="tui-content">
             {{ content }}
         </div>
-    </div>
 
-    <footer>
-        <div class="command-block">
-            <span class="prompt">guest@samuel.louviot.site</span>:<span class="path">~</span>$ <span class="command">echo "© {{ site.time | date: '%Y' }} Samuel Louviot"</span>
+        <div class="tui-statusbar">
+            <div>© {{ site.time | date: '%Y' }} Samuel Louviot</div>
+            <div>Press ? for help</div>
         </div>
-    </footer>
+    </div>
 </body>
 </html> 
