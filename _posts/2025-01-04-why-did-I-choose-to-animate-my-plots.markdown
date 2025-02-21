@@ -80,7 +80,7 @@ with 8 * 39 = 312 pages. This is not that bad: my managers would receive 1 PDF
 file instead of 312 individual png files! But let's be honest, it's not fun
 to scroll through the PDF.
 
-[Figures in Pdf without animation](../docs/assets/images/animated_pdf_gif.gif)
+![Figures in Pdf without animation](../docs/assets/images/animated_pdf_figures_gif.gif)
 
 # Animate the plot!
 The second solution is to animate the plot which has several advantages: 
@@ -159,4 +159,4 @@ plt.show()
 ```
 
 Here is the result!:
-[Result of Animated Plot](../docs/assets/images/animated_animation_figures_gif.gif)
+![Result of Animated Plot](../docs/assets/images/animated_animation_figures_gif.gif)
