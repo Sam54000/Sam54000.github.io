@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Gruvbox Dark Colors */
+            --bg: #282828;
+            --bg-soft: #32302f;
+            --fg: #ebdbb2;
+            --red: #cc241d;
+            --green: #98971a;
+            --yellow: #d79921;
+            --blue: #458588;
+            --purple: #b16286;
+            --aqua: #689d6a;
+            --gray: #928374;
+            --orange: #d65d0e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            background-color: var(--bg);
+            color: var(--fg);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .terminal-window {
+            background-color: var(--bg-soft);
+            border: 2px solid var(--gray);
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .terminal-header {
+            border-bottom: 1px solid var(--gray);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .prompt {
+            color: var(--green);
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 1em;
+            background-color: var(--fg);
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        nav {
+            margin: 2rem 0;
+        }
+
+        nav a {
+            color: var(--blue);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--aqua);
+        }
+
+        nav a::before {
+            content: '>';
+            color: var(--green);
+            margin-right: 0.5rem;
+        }
+
+        h1, h2, h3 {
+            color: var(--yellow);
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .post-list {
+            list-style: none;
+        }
+
+        .post-list li {
+            margin-bottom: 1rem;
+        }
+
+        .post-date {
+            color: var(--gray);
+        }
+
+        .post-link {
+            color: var(--blue);
+            text-decoration: none;
+        }
+
+        .post-link:hover {
+            color: var(--aqua);
+        }
+
+        footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--gray);
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        code {
+            background-color: var(--bg);
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+        }
+
+        pre {
+            background-color: var(--bg);
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <span class="prompt">guest@{{ site.title }}:~$</span> cat {{ page.title | downcase }}.txt
+        </div>
+        <div class="terminal-content">
+            {{ content }}
+        </div>
+    </div>
+
+    <nav>
+        <a href="/">home</a>
+        <a href="/about">about</a>
+        <a href="/blog">blog</a>
+        <a href="/projects">projects</a>
+    </nav>
+
+    <footer>
+        <p>© {{ site.time | date: '%Y' }} {{ site.title }} | Built with <span style="color: var(--red);">♥</span> using Jekyll</p>
+    </footer>
+</body>
+</html> 

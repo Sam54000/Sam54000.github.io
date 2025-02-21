@@ -1,0 +1,156 @@
+---
+layout: terminal
+---
+
+<div class="post-header">
+    <span class="prompt">guest@{{ site.title }}:~/posts$</span> cat {{ page.title | downcase | replace: ' ', '_' }}.md
+</div>
+
+<div class="post-metadata">
+    <span class="post-date">Created: {{ page.date | date: "%Y-%m-%d %H:%M" }}</span>
+    {% if page.last_modified_at %}
+    <span class="post-date">Modified: {{ page.last_modified_at | date: "%Y-%m-%d %H:%M" }}</span>
+    {% endif %}
+    
+    {% assign words = content | number_of_words %}
+    <span class="reading-time">Reading time: ~{{ words | divided_by: 180 | plus: 1 }} min</span>
+    
+    {% if page.tags.size > 0 %}
+    <div class="tags">
+        <span class="prompt">> ls tags/</span>
+        {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+
+<article class="post">
+    {{ content }}
+</article>
+
+<div class="post-footer">
+    <div class="navigation">
+        {% if page.previous.url %}
+        <a class="prev" href="{{page.previous.url}}">&lt; {{ page.previous.title }}</a>
+        {% endif %}
+        {% if page.next.url %}
+        <a class="next" href="{{page.next.url}}">{{ page.next.title }} &gt;</a>
+        {% endif %}
+    </div>
+</div>
+
+<style>
+    .post-header {
+        margin-bottom: 2rem;
+        color: var(--green);
+    }
+
+    .post-metadata {
+        background-color: var(--bg);
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .post-metadata > * {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .post-date {
+        color: var(--blue);
+    }
+
+    .reading-time {
+        color: var(--purple);
+    }
+
+    .tags {
+        margin-top: 1rem;
+    }
+
+    .tag {
+        display: inline-block;
+        background-color: var(--bg-soft);
+        color: var(--aqua);
+        padding: 0.2rem 0.5rem;
+        margin: 0.2rem;
+        border-radius: 3px;
+        font-size: 0.8rem;
+    }
+
+    .post {
+        margin: 2rem 0;
+    }
+
+    .post img {
+        max-width: 100%;
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    .post-footer {
+        margin-top: 3rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--gray);
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        color: var(--blue);
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .navigation a:hover {
+        color: var(--aqua);
+    }
+
+    /* Code block styling */
+    .highlight {
+        background-color: var(--bg);
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 1rem 0;
+        overflow-x: auto;
+    }
+
+    /* Blockquote styling */
+    blockquote {
+        border-left: 3px solid var(--yellow);
+        padding-left: 1rem;
+        margin: 1rem 0;
+        color: var(--gray);
+    }
+
+    /* List styling */
+    .post ul, .post ol {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Table styling */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+    }
+
+    th, td {
+        padding: 0.5rem;
+        border: 1px solid var(--gray);
+    }
+
+    th {
+        background-color: var(--bg-soft);
+        color: var(--yellow);
+    }
+</style> 
