@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why did I choose to animate my plots?"
+title:  "Why did I choose to animate my plots? (Not finished!)"
 date:   2025-01-04 20:30:42 -0500
 categories: jekyll update
 ---

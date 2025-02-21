@@ -9,17 +9,160 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #000000;
-            --bg-soft: #0d0d0d;
-            --fg: #ffffff;
-            --green: #0f0;
-            --blue: #0bc;
-            --pink: #ff0096;
-            --gray: #888888;
-            --yellow: #ffbf00;
-            --red: #ff0000;
-            --dark-green: #1b961b;
-        }
+            --bg_h: #000000;
+            --bg:   #000000;
+            --bg_s: #000000;
+            --bg1:  #161616;
+            --bg2:  #202020;
+            --bg3:  #2a2a2a;
+            --bg4:  #343434;
+          
+            --fg:  #c4c4c4;
+            --fg1: #d8d8d8;
+            --fg2: #cccccc;
+            --fg3: #c0c0c0;
+            --fg4: #a8a8a8;
+          
+            --red:    #ff6666;
+            --green:  #5ffa8c;
+            --dark-green: #4a9718;
+            --light-green: #50fa7b;
+            --yellow: #f1fa8c;
+            --blue:   #7282b4;
+            --purple: #bd93f9;
+            --aqua:   #8be9fd;
+            --gray:   #808096;
+            --orange: #ffb86c;
+          
+            --red-dim:    #e64545;
+            --green-dim:  #40cf40;
+            --yellow-dim: #e6e600;
+            --blue-dim:   #5d5dff;
+            --purple-dim: #a359ff;
+            --aqua-dim:   #40e6e6;
+            --gray-dim:   #909090;
+            --orange-dim: #e69040;
+          }
+          
+          /* Normal Colors */
+          
+          .red {
+            color: var(--red);
+          }
+          
+          .green {
+            color: var(--green);
+          }
+          
+          .yellow {
+            color: var(--yellow);
+          }
+          
+          .blue {
+            color: var(--blue);
+          }
+          
+          .purple {
+            color: var(--purple);
+          }
+          
+          .aqua {
+            color: var(--aqua);
+          }
+          
+          .gray {
+            color: var(--gray);
+          }
+          
+          .orange {
+            color: var(--orange);
+          }
+          
+          /* Dim Colors */
+          
+          .red-dim {
+            color: var(--red-dim);
+          }
+          
+          .green-dim {
+            color: var(--green-dim);
+          }
+          
+          .yellow-dim {
+            color: var(--yellow-dim);
+          }
+          
+          .blue-dim {
+            color: var(--blue-dim);
+          }
+          
+          .purple-dim {
+            color: var(--purple-dim);
+          }
+          
+          .aqua-dim {
+            color: var(--aqua-dim);
+          }
+          
+          .gray-dim {
+            color: var(--gray-dim);
+          }
+          
+          .orange-dim {
+            color: var(--orange-dim);
+          }
+          
+          /* Foreground Colors */
+          
+          .fg {
+            color: var(--fg);
+          }
+          
+          .fg1 {
+            color: var(--fg1);
+          }
+          
+          .fg2 {
+            color: var(--fg2);
+          }
+          
+          .fg3 {
+            color: var(--fg3);
+          }
+          
+          .fg4 {
+            color: var(--fg4);
+          }
+          
+          /* Background Colors */
+          
+          .bg-hard {
+            color: var(--bg_h);
+          }
+          
+          .bg {
+            color: var(--bg);
+          }
+          
+          .bg-soft {
+            color: var(--bg_s);
+          }
+          
+          .bg1 {
+            color: var(--bg1);
+          }
+          
+          .bg2 {
+            color: var(--bg2);
+          }
+          
+          .bg3 {
+            color: var(--bg3);
+          }
+          
+          .bg4 {
+            color: var(--bg4);
+          }
 
         * {
             margin: 0;
@@ -29,23 +172,24 @@
 
         body {
             font-family: 'IBM Plex Mono', monospace;
-            background-color: var(--bg);
-            color: var(--fg);
+            background-color: var(--bg_h);
+            color: var(--fg1);
             line-height: 1.6;
-            padding: 2rem;
+            padding: 0rem;
             max-width: 900px;
             margin: 100px auto;
         }
 
         .tui-window {
-            border: 1px dashed var(--dark-green);
+            border: 1px solid var(--dark-green);
             border-radius: 0px;
             overflow: hidden;
+            /*box-shadow: 0 0 10px var(--dark-green);*/
         }
 
         .tui-titlebar {
-            background-color: var(--blue);
-            color: var(--bg);
+            background-color: var(--dark-green);
+            color: var(--bg_h);
             padding: 0.5rem 1rem;
             font-weight: bold;
             display: flex;
@@ -68,27 +212,36 @@
         .tui-maximize { background-color: var(--green); }
 
         .tui-content {
-            padding: 1rem;
-            background-color: var(--bg);
+            padding: 0rem;
+            font-weight: 100;
+
+            background-color: var(--bg_h);
         }
 
         .tui-section {
-            margin-bottom: 1rem;
+            margin-bottom: 0rem;
         }
 
         .tui-section-header {
-            background-color: var(--bg);
-            color: var(--gray);
+            background-color: var(--bg_h);
+            color: var(--green-dim);
+            position: relative;
+            display: block;
+            font-weight: 100;
+            font-size: 1.5rem;
             border-top: 1px dashed var(--dark-green);
             border-bottom: 1px dashed var(--dark-green);
-            position: relative;
-            font-weight: 500;
+            margin-top: 1rem;
+            padding: 0rem 0rem;
         }
         
         .tui-section-header::before {
-            content: '';
-            display: block;
-            padding: 0.3rem 1rem;
+            font-weight: 100;
+            content: '>_';
+            padding: 0rem 1rem;
+            margin-top: 1rem;
+            margin-bottom: 0rem;
+            margin-right: -1.5rem;
         }
 
         .tui-section-content {
@@ -97,7 +250,7 @@
 
         .tui-statusbar {
             background-color: var(--dark-green);
-            color: var(--bg);
+            color: var(--bg_h);
             padding: 0.3rem 1rem;
             font-size: 0.9rem;
             display: flex;
@@ -105,16 +258,19 @@
         }
 
         a {
-            color: var(--dark-green);
+            color: var(--green-dim);
             text-decoration: none;
+            transition: color 0.2s ease;
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: none;
+            color: var(--green);
+            text-shadow: 0 0 8px var(--green-dim);
         }
 
         h1, h2, h3 {
-            color: var(--green);
+            color: var(--dark-green);
             margin: 1.5rem 0 1rem 0;
         }
 
@@ -123,42 +279,57 @@
         }
 
         code {
-            background-color: var(--bg);
+            background-color: var(--bg1);
             padding: 0.2rem 0.4rem;
             border-radius: 0px;
-            color: var(--pink);
+            color: var(--purple);
+            border: 1px solid var(--bg3);
         }
 
         pre {
-            background-color: var(--bg);
+            background-color: var(--bg1);
             padding: 1rem;
             border-radius: 0px;
             overflow-x: auto;
             margin: 1rem 0;
+            border: 1px solid var(--bg3);
         }
 
         .command-output {
             padding-left: 1rem;
             margin: 0.5rem 0;
+            color: var(--fg2);
+        }
+
+        .highlight {
+            color: var(--green-dim);
         }
 
         .tui-menu {
             display: flex;
             gap: 1rem;
             padding: 0.5rem 1rem;
-            background-color: var(--gray);
+            background-color: var(--bg_h);
             margin-bottom: 1rem;
+            border-bottom: 1px solid var(--dark-green);
         }
 
         .tui-menu a {
-            color: var(--bg);
-            text-decoration: none;
+            color: var(--dark-green);
             padding: 0.2rem 0.5rem;
+            transition: all 0.2s ease;
         }
 
         .tui-menu a:hover {
-            background-color: var(--bg);
-            color: var(--gray);
+            background-color: var(--dark-green);
+            text-decoration: none;
+            color: var(--bg_h);
+            text-shadow: none;
+        }
+
+        ::selection {
+            background-color: var(--dark-green);
+            color: var(--bg_h);
         }
     </style>
 </head>
@@ -166,11 +337,6 @@
     <div class="tui-window">
         <div class="tui-titlebar">
             <div>samuel.louviot.site - {{ page.title }}</div>
-            <div class="tui-titlebar-buttons">
-                <div class="tui-button tui-minimize"></div>
-                <div class="tui-button tui-maximize"></div>
-                <div class="tui-button tui-close"></div>
-            </div>
         </div>
 
         <div class="tui-menu">

@@ -1,0 +1,122 @@
+---
+layout: terminal
+---
+
+<div class="tui-section">
+    <div class="tui-section-header">
+        {{ page.title }}
+    </div>
+    <div class="tui-section-content page-content">
+        {{ content }}
+    </div>
+</div>
+
+<style>
+    .page-content {
+        line-height: 1.8;
+    }
+
+    .page-content p {
+        margin-bottom: 1.5rem;
+    }
+
+    .page-content img {
+        max-width: 100%;
+        height: auto;
+        margin: 1.5rem 0;
+        border: 1px solid var(--gray);
+    }
+
+    .page-content blockquote {
+        border-left: 3px solid var(--pink);
+        padding-left: 1rem;
+        margin: 1.5rem 0;
+        color: var(--gray);
+    }
+
+    .page-content ul, 
+    .page-content ol {
+        margin: 1rem 0 1.5rem 2rem;
+    }
+
+    .page-content li {
+        margin-bottom: 0.5rem;
+    }
+
+    .page-content h2, 
+    .page-content h3, 
+    .page-content h4 {
+        color: var(--light-green);
+        margin: 2rem 0 1rem 0;
+    }
+
+    /* Project and Blog specific styles */
+    .project-entry,
+    .post-entry {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: 1px dashed var(--dark-green);
+    }
+
+    .project-entry h2,
+    .post-entry h2 {
+        margin-top: 0;
+    }
+
+    .project-entry a,
+    .post-entry a {
+        color: var(--aqua);
+        text-decoration: none;
+    }
+
+    .project-entry a:hover,
+    .post-entry a:hover {
+        color: var(--light-green);
+        text-decoration: underline;
+    }
+
+    .post-meta {
+        color: var(--gray);
+        font-size: 0.9em;
+        margin: 0.5rem 0;
+    }
+
+    /* Code block styling */
+    .page-content pre {
+        background-color: var(--bg_h);
+        padding: 1rem;
+        margin: 1.5rem 0;
+        overflow-x: auto;
+        border: 1px solid var(--gray);
+    }
+
+    .page-content code {
+        background-color: var(--bg_h);
+        padding: 0.2rem 0.4rem;
+        color: var(--pink);
+        font-size: 0.9em;
+    }
+
+    .page-content table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+        border: 1px solid var(--gray);
+    }
+
+    .page-content th,
+    .page-content td {
+        padding: 0.5rem;
+        border: 1px solid var(--gray);
+    }
+
+    .page-content th {
+        background-color: var(--bg_h);
+        color: var(--light-green);
+        font-weight: 500;
+    }
+
+    .page-content tr:nth-child(even) {
+        background-color: var(--bg_h);
+    }
+</style> 

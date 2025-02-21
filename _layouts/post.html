@@ -3,9 +3,6 @@ layout: terminal
 ---
 
 <div class="tui-section">
-    <div class="tui-section-header">
-        Post Information
-    </div>
     <div class="tui-section-content post-metadata">
         <div class="metadata-item">Created: {{ page.date | date: "%Y-%m-%d %H:%M" }}</div>
         {% if page.last_modified_at %}
@@ -106,7 +103,7 @@ layout: terminal
     .post-content h2, 
     .post-content h3, 
     .post-content h4 {
-        color: var(--green);
+        color: var(--light-green);
         margin: 2rem 0 1rem 0;
     }
 
@@ -129,7 +126,7 @@ layout: terminal
 
     /* Code block styling */
     .post-content pre {
-        background-color: var(--bg);
+        background-color: var(--bg_h);
         padding: 1rem;
         margin: 1.5rem 0;
         overflow-x: auto;
@@ -137,13 +134,12 @@ layout: terminal
     }
 
     .post-content code {
-        background-color: var(--bg);
+        background-color: var(--bg_h);
         padding: 0.2rem 0.4rem;
         color: var(--pink);
         font-size: 0.9em;
     }
 
-    /* Table styling */
     .post-content table {
         width: 100%;
         border-collapse: collapse;
@@ -158,12 +154,12 @@ layout: terminal
     }
 
     .post-content th {
-        background-color: var(--bg);
-        color: var(--green);
+        background-color: var(--bg_h);
+        color: var(--light-green);
         font-weight: 500;
     }
 
     .post-content tr:nth-child(even) {
-        background-color: var(--bg);
+        background-color: var(--bg_h);
     }
 </style> 

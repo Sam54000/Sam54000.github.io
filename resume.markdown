@@ -5,11 +5,8 @@ permalink: /resume/
 ---
 
 <div class="tui-section">
-    <div class="tui-section-header">
-        Download Resume
-    </div>
     <div class="tui-section-content">
-        <a href="/resume_samuel_louviot.pdf" class="pdf-link"><strong class="highlight">📄 Download PDF version</strong></a> (put your sunglasses 😎, it is not in dark mode)
+        <a href="/documents/resume_samuel_louviot.pdf" class="pdf-link"><strong class="highlight">📄 Download PDF version</strong></a> (put your sunglasses 😎, it is not in dark mode)
     </div>
 </div>
 
@@ -43,7 +40,7 @@ permalink: /resume/
         <div class="experience-item">
             <strong class="highlight">Nathan Kline Institute | Child Mind Institute</strong><br>
             <em>New York, NY, USA</em><br>
-            <strong>Scientific Software Engineer Generalist | EEG Expert</strong><br>
+            <strong class="highlight-position">Scientific Software Engineer Generalist | EEG Expert</strong><br>
             <em>Jan 2024 - Present</em>
             <ul>
                 <li>Developed machine learning models predicting fMRI brain states from EEG data, achieving 70% accuracy</li>
@@ -56,7 +53,7 @@ permalink: /resume/
         <div class="experience-item">
             <strong class="highlight">Weill Cornell Medicine</strong><br>
             <em>New York, NY, USA</em><br>
-            <strong>Postdoctoral Associate | Data Scientist | Neural Engineer</strong><br>
+            <strong class="highlight-position">Postdoctoral Associate | Data Scientist | Neural Engineer</strong><br>
             <em>Jun 2022 - Jan 2024</em>
             <ul>
                 <li>Developed EEG analysis software systems and data pipelines in Python</li>
@@ -70,7 +67,7 @@ permalink: /resume/
         <div class="experience-item">
             <strong class="highlight">Hospital Central, Université de Lorraine, CNRS</strong><br>
             <em>Nancy, Grand Est, France</em><br>
-            <strong>Graduate Research Associate</strong><br>
+            <strong class="highlight-position">Graduate Research Associate</strong><br>
             <em>Oct 2018 - Jun 2022</em>
             <ul>
                 <li>Conducted data analytics on biophysical models of intracerebral electric fields using Matlab and Python</li>
@@ -82,7 +79,7 @@ permalink: /resume/
         <div class="experience-item">
             <strong class="highlight">Université de Lorraine</strong><br>
             <em>Nancy, Grand Est, France</em><br>
-            <strong>Lecturer</strong><br>
+            <strong class="highlight-position">Lecturer</strong><br>
             <em>2020 - 2021</em>
             <ul>
                 <li>Taught the course <strong>Applied Mathematics for Biomedical Engineering</strong> at the Graduate School of Biomedical Engineering</li>
@@ -91,7 +88,7 @@ permalink: /resume/
         <div class="experience-item">
             <strong class="highlight">City College of New York</strong><br>
             <em>New York, NY, USA</em><br>
-            <strong>Short-term Research Scholar in Neural Engineering</strong><br>
+            <strong class="highlight-position">Short-term Research Scholar in Neural Engineering</strong><br>
             <em>Jun 2019 - Dec 2019</em>
             <ul>
                 <li>Conducted biophysical model validation of electric field propagation in the brain during transcranial electrical stimulation</li>
@@ -100,7 +97,7 @@ permalink: /resume/
         <div class="experience-item">
             <strong class="highlight">Université de Lorraine</strong><br>
             <em>Nancy, Grand Est, France</em><br>
-            <strong>Lecturer</strong><br>
+            <strong class="highlight-position">Lecturer</strong><br>
             <em>2019 - 2020</em>
             <ul>
                 <li>Taught the course <strong>Instrumentation and Sensors</strong> in Human Electrophysiology at the college of Biomedical Engineering</li>
@@ -174,9 +171,6 @@ permalink: /resume/
         background-color: var(--bg);
     }
 
-    .highlight {
-        color: var(--green);
-    }
 
     ul {
         list-style-type: none;
@@ -190,7 +184,7 @@ permalink: /resume/
 
     ul li::before {
         content: ">";
-        color: var(--pink);
+        color: var(--red);
         margin-right: 0.5rem;
     }
 
@@ -198,26 +192,21 @@ permalink: /resume/
         color: var(--gray);
     }
 
-    a {
-        color: var(--blue);
-        text-decoration: none;
+    .highlight-position {
+        color: var(--red);
+        font-weight: 700;
     }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
     .pdf-link {
         display: inline-block;
         padding: 0.5rem 1rem;
-        border: 1px solid var(--green);
+        border: 1px solid var(--dark-green);
         border-radius: 0px;
         transition: all 0.2s ease;
     }
 
     .pdf-link:hover {
-        background-color: var(--green);
-        color: var(--bg);
+        color: var(--bg_h);
+        background-color: var(--dark-green);
         text-decoration: none;
     }
 </style>
