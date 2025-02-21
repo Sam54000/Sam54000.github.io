@@ -17,6 +17,8 @@
             --blue: #0bc;
             --pink: #ff0096;
             --gray: #888888;
+            --yellow: #ffbf00;
+            --red: #ff0000;
         }
 
         * {
@@ -57,14 +59,13 @@
         }
 
         .tui-button {
-            width: 12px;
-            height: 12px;
-            border-radius: 0px;
-            border: 1px solid var(--bg);
+            width: 10px;
+            height: 10px;
+            border-radius: 1px;
         }
 
-        .tui-close { background-color: var(--pink); }
-        .tui-minimize { background-color: var(--gray); }
+        .tui-close { background-color: var(--red); }
+        .tui-minimize { background-color: var(--yellow); }
         .tui-maximize { background-color: var(--green); }
 
         .tui-content {
@@ -79,7 +80,7 @@
         }
 
         .tui-section-header {
-            background-color: var(--gray);
+            background-color: var(--bg);
             color: var(--bg);
             padding: 0.3rem 1rem;
             font-weight: 500;

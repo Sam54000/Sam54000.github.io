@@ -1,41 +1,137 @@
 ---
-layout: page
+layout: terminal
 title: About
 permalink: /about/
 ---
-I come from France, from a cold and beautiful place called "Vosges," which is
-close to the German border. Since 2022, I have been living in New York City, 
-working as a Scientific Software Engineer and Neural Engineer.
 
-For those who aren't familiar with the term "Neural Engineer": 
-I discovered this term while working at the City College of New York under 
-the supervision of [Prof. Jacek Dmochowski](https://dmochow.github.io/about/), 
-and I found it aptly describes my profile.
-- **Neural:** I hold a PhD in Health and Life Sciences with a 
-concentration in Human Neuroscience, specifically intracerebral (invasive)
-electroencephalography. You can find my research work [here](https://docnum.univ-lorraine.fr/public/DDOC_T_2022_0102_LOUVIOT.pdf)
-(the first 25 pages are a summary in French, but the rest is in English).
+<div class="tui-section">
+    <div class="tui-section-header">
+        Background
+    </div>
+    <div class="tui-section-content">
+        I come from France, from a cold and beautiful place called <a href="https://www.ecosia.org/images?q=Les+Vosges">"Vosges"</a> where I was born and spent most of my life. 
+        It is located in the North-East of France, next to Germany and Switzerland
+        <a href="https://maps.app.goo.gl/cXLQHXqoREzFiyX18">here</a>. If you are curious about this area and its culture, please wait as I am writing a dedicated page to talk about its rich culture and history.
+        Anyway, since 2022, I have been living in New York City, working as a 
+        Scientific Software Engineer and Neural Engineer.
+    </div>
+</div>
 
-- **Engineer:** I have an associate degree in electrical engineering, a 
-B.Sc., and an M.Sc. in Biomedical Engineering (with a concentration 
-in Cybernetics/Robotics, software engineering, instrumentation, 
-and imaging for biology and medicine).
+<div class="tui-section">
+    <div class="tui-section-header">
+        Neural Engineering
+    </div>
+    <div class="tui-section-content">
+        <p>
+        For those who aren't familiar with the term "Neural Engineer": 
+        I discovered this term while working at the City College of New York under 
+        the supervision of <a href="https://dmochow.github.io/about/">Prof. Jacek Dmochowski</a>, 
+        and I found it aptly describes my profile.
+        </p>
+        <p>
+        <strong class="highlight">Neural:</strong> I hold a PhD in Neuroscience, specialized in Human electrophysilogy, notably intracerebral (invasive) and surface (non-invasive) electroencephalography. You can find my research work <a href="https://docnum.univ-lorraine.fr/public/DDOC_T_2022_0102_LOUVIOT.pdf">here</a> (the first 25 pages are a summary in French, but the rest is in English). I did a postdoc
+        at Weill Cornell Medicine | New York Presbyterian in Brain Stimulation and Brain Computer Interface.
+        </p>
+        <p>
+        <strong class="highlight">Engineer:</strong> I hold a
+        <ul>
+            <li>Master's degree in Biomedical Engineering, Cybernetics, Robotics, Softwares and Imaging for Medicine</li>
+            <li>Bachelor's degree in Biomedical Engineering</li> 
+            <li>Associate's degree in Electrical Engineering</li?>
+        </ul>
+        But above all, what makes me an engineer is my passion and love for technology, science, tweaking, creating, building, fixing, improving, optimizing, soldering, coding, solving problems. It is my thirst to understand how systems work, always scribbling schematics on a sheets of papers trying to make better system for everything. And finally, what makes me an engineer is my biggest passion: Learning.
+    </div>
+</div>
 
-I am passionate about science and engineering, learning, coding, soldering, 
-and experimenting with my three Raspberry Pis. 
-I love nature and strive to orient all my actions 
-toward the protection of our planet. 
+<div class="tui-section">
+    <div class="tui-section-header">
+        Interests
+    </div>
+    <div class="tui-section-content">
+        As I said above, I am passionate about science and engineering, 
+        learning, coding, soldering. My wife love saying: "New Obsession Unlocked"
+        when she sees me browsing <a href="https://www.adafruit.com/">adafruit</a> 
+        or considering buying a 5th Raspberry Pi 
+        (Well... Common! It's the new Raspberry Pi 5!! I can't do nothing!).
+        My other passion is Nature, and I am focusing on orienting each of my
+        actions toward environment preservation.
+    </div>
+</div>
 
-**What is "SystemD"?**
-The name has two origins:
-1. It comes from a French expression "Système D" for "Système débrouille," which is a significant part of French culture. 
-It means that when facing challenges, you can devise a solution 
-with only the few resources available to you. 
-As a former military (Gendarme), I heard and applied this term A LOT! 
-If "Système D" were a fictional character, it would be MacGyver. 
-Here are some resources that explain "Système D" well:
-- ["Système D" from the blog "FranceSays"](https://francesays.com/2015/04/09/systeme-d/)
-- [Definition from the Collins Dictionary](https://www.collinsdictionary.com/dictionary/french-english/système-d)
+<div class="tui-section">
+    <div class="tui-section-header">
+        What is "SystemD"? The name behind the website
+    </div>
+    <div class="tui-section-content">
+        The name has two origins:
+        <div class="origin-item">
+            <strong class="highlight">1. French Culture:</strong>
+            <p>It comes from a French expression "Système D" for "Système débrouille," which is a significant part of French culture. 
+            It means that when facing challenges, you can devise a solution 
+            with only the few resources available to you.</p>
+            <p>As a former military (Gendarme), I heard and applied this term A LOT! 
+            If "Système D" were a fictional character, it would be MacGyver.</p>
+            <div class="resources">
+                Resources:
+                <ul>
+                    <li><a href="https://francesays.com/2015/04/09/systeme-d/">"Système D" from the blog "FranceSays"</a></li>
+                    <li><a href="https://www.collinsdictionary.com/dictionary/french-english/système-d">Definition from the Collins Dictionary</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="origin-item">
+            <strong class="highlight">2. GNU/Linux:</strong>
+            <p>systemd in GNU/Linux is a system and service manager:</p>
+            <ul>
+                <li><a href="https://www.freedesktop.org/wiki/Software/systemd/">systemd official website</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-2. systemd in GNU/Linux is a system and service manager: 
-- [systemd official website](https://www.freedesktop.org/wiki/Software/systemd/)
+<style>
+    .profile-item, .origin-item {
+        margin: 1.5rem 0;
+        padding: 1rem;
+        border: 1px solid var(--gray);
+        background-color: var(--bg);
+    }
+
+    .highlight {
+        color: var(--green);
+    }
+
+    .resources {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--gray);
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 1rem;
+    }
+
+    ul li {
+        margin: 0.5rem 0;
+    }
+
+    ul li::before {
+        content: ">";
+        color: var(--pink);
+        margin-right: 0.5rem;
+    }
+
+    a {
+        color: var(--blue);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+</style>
