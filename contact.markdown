@@ -58,32 +58,36 @@ You can also contact me on [LinkedIn](https://www.linkedin.com/in/samuel-louviot
     button.disabled = true;
     button.textContent = 'Sending...';
     
-    var formData = new FormData(form);
-    var data = {};
-    formData.forEach((value, key) => data[key] = value);
-    
     fetch(form.action, {
       method: 'POST',
-      body: JSON.stringify(data),
+      body: new FormData(form),
       headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'Accept': 'application/json'
       }
     }).then(response => {
-      if (response.ok) {
-        form.reset();
-        button.textContent = 'Message Sent!';
-        setTimeout(() => {
-          button.disabled = false;
-          button.textContent = 'Send Message';
-        }, 3000);
-      } else {
-        throw new Error('Form submission failed');
-      }
+      console.log('Response status:', response.status);
+      return response.json().then(data => {
+        console.log('Response data:', data);
+        if (response.ok) {
+          form.reset();
+          button.textContent = 'Message Sent!';
+          setTimeout(() => {
+            button.disabled = false;
+            button.textContent = 'Send Message';
+          }, 3000);
+        } else {
+          throw new Error(data.error || 'Submission failed');
+        }
+      });
     }).catch(error => {
-      console.error('Error:', error);
+      console.error('Detailed error:', error);
       button.disabled = false;
-      button.textContent = 'Error! Try Again';
+      if (error.message.includes('not activated')) {
+        button.textContent = 'Please Check Email to Activate';
+        alert('Please check your email to verify the form first. Formspree requires email verification for first-time use.');
+      } else {
+        button.textContent = 'Error! Try Again';
+      }
     });
   });
 </script> 
