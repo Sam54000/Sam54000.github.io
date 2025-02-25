@@ -54,15 +54,20 @@ You can also contact me on [LinkedIn](https://www.linkedin.com/in/samuel-louviot
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     var button = form.querySelector('button');
+    
     button.disabled = true;
     button.textContent = 'Sending...';
     
+    var formData = new FormData(form);
+    var data = {};
+    formData.forEach((value, key) => data[key] = value);
+    
     fetch(form.action, {
       method: 'POST',
-      body: new FormData(form),
+      body: JSON.stringify(data),
       headers: {
         'Accept': 'application/json',
-        'X-Requested-With': 'XMLHttpRequest'
+        'Content-Type': 'application/json'
       }
     }).then(response => {
       if (response.ok) {
@@ -73,15 +78,12 @@ You can also contact me on [LinkedIn](https://www.linkedin.com/in/samuel-louviot
           button.textContent = 'Send Message';
         }, 3000);
       } else {
-        response.json().then(data => {
-          console.error('Form submission error:', data);
-          throw new Error(data.error || 'Network response was not ok');
-        });
+        throw new Error('Form submission failed');
       }
     }).catch(error => {
+      console.error('Error:', error);
       button.disabled = false;
       button.textContent = 'Error! Try Again';
-      console.error('Error:', error);
     });
   });
 </script> 
