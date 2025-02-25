@@ -11,13 +11,8 @@ You can also contact me on [LinkedIn](https://www.linkedin.com/in/samuel-louviot
 
 <form action="https://formspree.io/f/mpwqgbnd" method="POST">
   <div style="margin-bottom: 20px;">
-    <label for="name" style="display: block; margin-bottom: 5px;">Name:</label>
-    <input class="input-field" type="text" id="name" name="name" required>
-  </div>
-
-  <div style="margin-bottom: 20px;">
     <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
-    <input class="input-field" type="email" id="email" name="_replyto" required>
+    <input class="input-field" type="email" id="email" name="email" required>
   </div>
 
   <div style="margin-bottom: 20px;">
@@ -61,11 +56,13 @@ You can also contact me on [LinkedIn](https://www.linkedin.com/in/samuel-louviot
     var button = form.querySelector('button');
     button.disabled = true;
     button.textContent = 'Sending...';
+    
     fetch(form.action, {
       method: 'POST',
       body: new FormData(form),
       headers: {
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'X-Requested-With': 'XMLHttpRequest'
       }
     }).then(response => {
       if (response.ok) {
@@ -76,7 +73,10 @@ You can also contact me on [LinkedIn](https://www.linkedin.com/in/samuel-louviot
           button.textContent = 'Send Message';
         }, 3000);
       } else {
-        throw new Error('Network response was not ok');
+        response.json().then(data => {
+          console.error('Form submission error:', data);
+          throw new Error(data.error || 'Network response was not ok');
+        });
       }
     }).catch(error => {
       button.disabled = false;
