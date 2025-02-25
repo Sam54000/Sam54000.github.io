@@ -103,7 +103,7 @@ layout: terminal
     .post-content h2, 
     .post-content h3, 
     .post-content h4 {
-        color: var(--light-green);
+        color: var(--green);
         margin: 2rem 0 1rem 0;
     }
 
@@ -126,36 +126,61 @@ layout: terminal
 
     /* Code block styling */
     .post-content pre {
-        background-color: var(--bg_h);
-        padding: 1rem;
-        margin: 1.5rem 0;
+        background-color: #151515;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
         overflow-x: auto;
-        border: 1px solid var(--gray);
+        font-family: 'Sometype Mono', monospace;
+        border-radius: 3px;
     }
 
     .post-content code {
-        background-color: var(--bg_h);
+        background-color: #151515;
         padding: 0.2rem 0.4rem;
-        color: var(--pink);
-        font-size: 0.9em;
+        font-family: 'Sometype Mono', monospace;
+        border-radius: 3px;
+        font-size: 1em;
+    }
+
+    /* Remove all borders and padding from Rouge containers */
+    .post-content .highlight {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: #151515;
+    }
+
+    .post-content .highlight pre {
+        border: none;
+        margin: 0;
+        background-color: #151515;
+    }
+
+    /* Remove line numbers */
+    .post-content .highlight .lineno {
+        display: none;
+    }
+
+    /* Remove the gap that line numbers create */
+    .post-content .highlight .code {
+        padding-left: 0;
+        border: none;
     }
 
     .post-content table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 1.5rem 0;
-        border: 1px solid var(--gray);
+        width: 0%;
+        border: none;
     }
 
-    .post-content th,
     .post-content td {
         padding: 0.5rem;
-        border: 1px solid var(--gray);
+        border: none;
+        color: var(--fg3);
     }
 
     .post-content th {
         background-color: var(--bg_h);
-        color: var(--light-green);
+        color: var(--fg4);
         font-weight: 500;
     }
 

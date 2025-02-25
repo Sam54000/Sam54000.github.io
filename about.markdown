@@ -4,9 +4,6 @@ title: About
 permalink: /about/
 ---
 <div class="tui-section">
-    <div class="tui-section-header">
-        Background
-    </div>
     <div class="tui-section-content">
         I come from France, from a cold and beautiful place called <a href="https://www.ecosia.org/images?q=Les+Vosges">"Vosges"</a> where I was born and spent most of my life. 
         It is located in the North-East of France, next to Germany and Switzerland

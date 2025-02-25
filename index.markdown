@@ -2,14 +2,13 @@
 layout: terminal
 title: Home
 ---
-
 <div class="tui-section">
     <div class="tui-section-content">
-        <strong style="color: var(--green-dim); font-weight: 100; font-size: 1.8rem;">Dr. Samuel Louviot, PhD</strong>
-        <br>
-        Scientific Software Engineer | Neural Engineer
-        <br><br>
-        I'm a Scientific Software Engineer specializing in Neural Engineering. I build tools and applications that bridge the gap between neuroscience and technology.
+        <strong class="main-title">Dr. Samuel Louviot, PhD</strong>
+        <span class="subtitle">Scientific Software Engineer | Neural Engineer</span>
+            <p>I am a Neuroscientist specializing in Software Engineering. I
+            build tools and applications to solve technical and scientific challenges
+            in neuroscience.</p>
     </div>
 </div>
 
@@ -18,15 +17,20 @@ title: Home
         Latest Projects
     </div>
     <div class="tui-section-content">
-        {% assign sorted_pages = site.pages | where_exp: "item", "item.path contains 'projects/'" | sort: "date" | reverse %}
-        {% for project in sorted_pages limit:3 %}
+        {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+        {% for project in sorted_projects limit:3 %}
         <div class="project-item">
             <span class="project-name"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></span>
             {% if project.description %}
-            <span class="project-desc">- {{ project.description }}</span>
+            <span class="project-desc"> - {{ project.description }}</span>
             {% endif %}
-            {% if project.date %}
-            <div class="project-date">{{ project.date | date: "%Y-%m-%d" }}</div>
+            {% if project.status %}
+            <div class="project-meta">
+                <span class="project-status">Status: {{ project.status }}</span>
+                {% if project.date %}
+                <span class="project-date">{{ project.date | date: "%B %-d, %Y" }}</span>
+                {% endif %}
+            </div>
             {% endif %}
         </div>
         {% endfor %}
@@ -53,26 +57,27 @@ title: Home
     </div>
 </div>
 
-<div class="tui-section">
-    <div class="tui-section-header">
-        Contact Information
-    </div>
-    <div class="tui-section-content">
-        <div class="contact-item">Email: <a href="mailto:samuel.louviot@pm.me">samuel.louviot@pm.me</a></div>
-        <div class="contact-item">GitHub: <a href="https://github.com/Sam54000">Sam54000</a></div>
-        <div class="contact-item">LinkedIn: <a href="https://www.linkedin.com/in/samuel-louviot">samuel-louviot</a></div>
-    </div>
-</div>
-
 <style>
-.project-item, .post-item, .contact-item {
-    margin-bottom: 0.5rem;
+.project-item, .post-item {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: transparent;
 }
 
 .post-date, .project-date {
     color: var(--gray);
     font-size: 0.9em;
-    margin-top: 0.2rem;
+}
+
+.project-meta {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-status {
+    color: var(--orange);
 }
 
 .post-date {
@@ -80,15 +85,21 @@ title: Home
 }
 
 .project-name, .post-title {
-    color: var(--dark-green);
+    color: var(--green);
+}
+
+.project-name a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+.project-name a:hover {
+    color: var(--light-green);
+    text-decoration: underline;
 }
 
 .project-desc {
-    color: var(--fg);
-}
-
-.contact-item a {
-    color: var(--orange-dim);
+    color: var(--fg2);
 }
 
 .view-all {
@@ -104,5 +115,25 @@ title: Home
 .view-all a:hover {
     color: var(--light-green);
     text-decoration: underline;
+}
+
+.main-title {
+    color: var(--green);
+    font-weight: 400;
+    font-size: 2.4rem;
+    font-family: 'Sometype Mono', monospace;
+    display: block;
+    margin-bottom: 0rem;
+}
+
+.subtitle {
+    color: var(--fg);
+    font-family: 'Sometype Mono', monospace;
+    display: block;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+
 }
 </style>

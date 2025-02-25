@@ -3,9 +3,6 @@ layout: terminal
 ---
 
 <div class="tui-section">
-    <div class="tui-section-header">
-        {{ page.title }}
-    </div>
     <div class="tui-section-content page-content">
         {{ content }}
     </div>
@@ -46,7 +43,7 @@ layout: terminal
     .page-content h2, 
     .page-content h3, 
     .page-content h4 {
-        color: var(--light-green);
+        color: var(--green);
         margin: 2rem 0 1rem 0;
     }
 
@@ -65,7 +62,7 @@ layout: terminal
 
     .project-entry a,
     .post-entry a {
-        color: var(--aqua);
+        color: var(--green);
         text-decoration: none;
     }
 
@@ -81,33 +78,66 @@ layout: terminal
         margin: 0.5rem 0;
     }
 
-    /* Code block styling */
+    /* Basic code block structure - syntax highlighting handled by Rouge */
     .page-content pre {
-        background-color: var(--bg_h);
-        padding: 1rem;
-        margin: 1.5rem 0;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
         overflow-x: auto;
-        border: 1px solid var(--gray);
+        border: none;
+        background-color: #151515;
     }
 
+    /* Remove all borders and padding from Rouge containers */
+    .page-content .code-highlight {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: #151515;
+    }
+
+    .page-content .code-highlight pre {
+        border: none;
+        margin: 0;
+        background-color: #151515;
+    }
+
+    /* Remove line numbers */
+    .page-content .code-highlight .lineno {
+        display: none;
+    }
+
+    /* Remove the gap that line numbers create */
+    .page-content .code-highlight .code {
+        padding-left: 0;
+        border: none;
+    }
+
+    /* Minimal styling for inline code */
     .page-content code {
-        background-color: var(--bg_h);
-        padding: 0.2rem 0.4rem;
-        color: var(--pink);
-        font-size: 0.9em;
+        font-family: 'Sometype Mono', monospace;
+        font-size: 1em;
+        background-color: var(--bg3);
+        border-radius: 3px;
+    }
+
+    /* Style for inline code */
+    .page-content :not(pre) > code {
+        padding: 0.2em 0.4em;
+        background-color: var(--bg3);
+        border-radius: 3px;
     }
 
     .page-content table {
         width: 100%;
         border-collapse: collapse;
         margin: 1.5rem 0;
-        border: 1px solid var(--gray);
+        border: none;
     }
 
     .page-content th,
     .page-content td {
         padding: 0.5rem;
-        border: 1px solid var(--gray);
+        border: none;
     }
 
     .page-content th {

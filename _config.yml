@@ -30,15 +30,44 @@ url: "https://sam54000.github.io" # the base hostname & protocol for your site, 
 github_username: Sam54000
 linkedin_username: samuel-louviot
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
 # Build settings
 remote_theme: jekyll/minima
 plugins:
   - jekyll-remote-theme
 minima:
   skin: dark
+  syntax_highlighter_style: monokai
+  header_pages:
+    - about.markdown
+    - projects.markdown
+    - blog.markdown
+    - contact.markdown
 
 plugins:
   - jekyll-feed
+
+# Syntax highlighting settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+      start_line: 1
+    css_class: 'code-highlight'
+    span:
+      line_numbers: false
+# Theme settings
+minima:
+  skin: dark
+  syntax_highlighter_style: monokai
 
 # Exclude from processing.
 # The following items will not be processed, by default.

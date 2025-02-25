@@ -3,19 +3,9 @@ layout: terminal
 title: Resume
 permalink: /resume/
 ---
-
 <div class="tui-section">
     <div class="tui-section-content">
-        <a href="/documents/resume_samuel_louviot.pdf" class="pdf-link"><strong class="highlight">📄 Download PDF version</strong></a> (put your sunglasses 😎, it is not in dark mode)
-    </div>
-</div>
-
-<div class="tui-section">
-    <div class="tui-section-header">
-        Contact Information
-    </div>
-    <div class="tui-section-content">
-        <strong class="highlight">Email:</strong> <a href="mailto:samuel.louviot@pm.me">samuel.louviot@pm.me</a><br>
+        <strong class="highlight">Contact me:</strong> <a href="/contact">contact me</a><br>
         <strong class="highlight">Phone:</strong> (716) 203-5107<br>
         <strong class="highlight">LinkedIn:</strong> <a href="https://www.linkedin.com/in/samuel-louviot">linkedin.com/in/samuel-louviot</a><br>
         <strong class="highlight">GitHub:</strong> <a href="https://github.com/Sam54000">github.com/Sam54000</a><br>
@@ -28,7 +18,11 @@ permalink: /resume/
         Career Objective
     </div>
     <div class="tui-section-content">
-        Neuroscientist and engineer with diverse work experience, seeking a software engineering position to leverage a broad skill set in engineering and neurophysiology. Passionate about continuous learning and fostering cutting-edge technology for healthcare and environmental preservation.
+        I am orienting my career towards software and AI/ML engineering. I like
+        to build tools and provide solutions to tackle complex technical and/or scientific
+        challenges. I am looking for a position that will challenge. The perfect
+        working environment for me is where learning is one of the main focus and
+        encouraged.
     </div>
 </div>
 
@@ -38,9 +32,9 @@ permalink: /resume/
     </div>
     <div class="tui-section-content">
         <div class="experience-item">
-            <strong class="highlight">Nathan Kline Institute | Child Mind Institute</strong><br>
-            <em>New York, NY, USA</em><br>
             <strong class="highlight-position">Scientific Software Engineer Generalist | EEG Expert</strong><br>
+            <strong class="highlight" style="color: var(--green);">Nathan Kline Institute | Child Mind Institute</strong><br>
+            <em>New York, NY, USA</em><br>
             <em>Jan 2024 - Present</em>
             <ul>
                 <li>Developed machine learning models predicting fMRI brain states from EEG data, achieving 70% accuracy</li>
@@ -51,9 +45,9 @@ permalink: /resume/
             </ul>
         </div>
         <div class="experience-item">
-            <strong class="highlight">Weill Cornell Medicine</strong><br>
+            <strong class="highlight-position">Scientific Software Engineer | Postdoctoral Researcher</strong><br>
+            <strong class="highlight" style="color: var(--green);">Weill Cornell Medicine</strong><br>
             <em>New York, NY, USA</em><br>
-            <strong class="highlight-position">Postdoctoral Associate | Data Scientist | Neural Engineer</strong><br>
             <em>Jun 2022 - Jan 2024</em>
             <ul>
                 <li>Developed EEG analysis software systems and data pipelines in Python</li>
@@ -65,11 +59,13 @@ permalink: /resume/
             </ul>
         </div>
         <div class="experience-item">
-            <strong class="highlight">Hospital Central, Université de Lorraine, CNRS</strong><br>
-            <em>Nancy, Grand Est, France</em><br>
             <strong class="highlight-position">Graduate Research Associate</strong><br>
+            <strong class="highlight" style="color: var(--green);">Hospital Central, Université de Lorraine, CNRS</strong><br>
+            <em>Nancy, Grand Est, France</em><br>
             <em>Oct 2018 - Jun 2022</em>
             <ul>
+                <li>Established Ground Truth of the Electric Field Distribution in the Brain from Intracerebral EEG (sEEG) in 8 Patients</li>
+                <li>Published results in a top-tier journal (Brain Stimulation)</li>
                 <li>Conducted data analytics on biophysical models of intracerebral electric fields using Matlab and Python</li>
                 <li>Processed intracerebral EEG (sEEG) and EEG signals for Machine Learning applications in epilepsy research</li>
                 <li>Validated electric field distribution during transcranial electrical stimulation through biophysical modeling from MR images</li>
@@ -77,27 +73,27 @@ permalink: /resume/
             </ul>
         </div>
         <div class="experience-item">
-            <strong class="highlight">Université de Lorraine</strong><br>
-            <em>Nancy, Grand Est, France</em><br>
             <strong class="highlight-position">Lecturer</strong><br>
+            <strong class="highlight" style="color: var(--green);">Université de Lorraine</strong><br>
+            <em>Nancy, Grand Est, France</em><br>
             <em>2020 - 2021</em>
             <ul>
                 <li>Taught the course <strong>Applied Mathematics for Biomedical Engineering</strong> at the Graduate School of Biomedical Engineering</li>
             </ul>
         </div>
         <div class="experience-item">
-            <strong class="highlight">City College of New York</strong><br>
-            <em>New York, NY, USA</em><br>
             <strong class="highlight-position">Short-term Research Scholar in Neural Engineering</strong><br>
+            <strong class="highlight" style="color: var(--green);">City College of New York</strong><br>
+            <em>New York, NY, USA</em><br>
             <em>Jun 2019 - Dec 2019</em>
             <ul>
                 <li>Conducted biophysical model validation of electric field propagation in the brain during transcranial electrical stimulation</li>
             </ul>
         </div>
         <div class="experience-item">
-            <strong class="highlight">Université de Lorraine</strong><br>
-            <em>Nancy, Grand Est, France</em><br>
             <strong class="highlight-position">Lecturer</strong><br>
+            <strong class="highlight" style="color: var(--green);">Université de Lorraine</strong><br>
+            <em>Nancy, Grand Est, France</em><br>
             <em>2019 - 2020</em>
             <ul>
                 <li>Taught the course <strong>Instrumentation and Sensors</strong> in Human Electrophysiology at the college of Biomedical Engineering</li>
@@ -112,43 +108,63 @@ permalink: /resume/
     </div>
     <div class="tui-section-content">
         <div class="education-item">
-            <strong class="highlight">Université de Lorraine, CNRS</strong><br>
-            <strong>Ph.D. in Neuroscience | Neural Engineering</strong><br>
+            <strong class="highlight-position">Ph.D. in Neuroscience | Neural Engineering</strong><br>
+            <strong class="highlight" style="color: var(--green);">Université de Lorraine, CNRS</strong><br>
             <em>2018 - 2022</em>
         </div>
         <div class="education-item">
-            <strong class="highlight">Université de Lorraine</strong><br>
-            <strong>M.S. in Biomedical Engineering (Cybernetics, Robotics, Software and Imaging)</strong><br>
+            <strong class="highlight-position">M.S. in Biomedical Engineering (Cybernetics, Robotics, Software and Imaging)</strong><br>
+            <strong class="highlight" style="color: var(--green);">Université de Lorraine</strong><br>
             <em>2016 - 2018</em>
         </div>
         <div class="education-item">
-            <strong class="highlight">Université de Lorraine</strong><br>
-            <strong>B.S. in Biomedical Engineering</strong><br>
+            <strong class="highlight-position">B.S. in Biomedical Engineering</strong><br>
+            <strong class="highlight" style="color: var(--green);">Université de Lorraine</strong><br>
             <em>2014 - 2016</em>
         </div>
         <div class="education-item">
-            <strong class="highlight">Lycée Pierre Mendes France</strong><br>
-            <strong>Associate Degree in Electrical Engineering</strong><br>
+            <strong class="highlight-position">Associate Degree in Electrical Engineering</strong><br>
+            <strong class="highlight" style="color: var(--green);">Lycée Pierre Mendes France</strong><br>
             <em>2012 - 2014</em>
         </div>
     </div>
 </div>
-
+<div class="tui-section">
+    <div class="tui-section-header">
+        Certifications
+    </div>
+    <div class="tui-section-content">
+        <ul>
+            <li><strong class="highlight"><a href="https://www.credly.com/badges/bbef02ee-98e3-4364-a9d2-0de33a9d6f74/public_url">IBM AI Engineering Professional Certificate</a></strong></li>
+            <li><strong class="highlight"><a href="https://www.credly.com/badges/ea0e9fb0-aa7f-4622-b6ba-249788bfea7f/public_url">IBM Data Science Specialization</a></strong></li>
+            <li><strong class="highlight">AWS Solution Architect Associate (in progress)</strong></li>
+        </ul>
+    </div>
+</div>
 <div class="tui-section">
     <div class="tui-section-header">
         Technical Skills
     </div>
     <div class="tui-section-content">
         <ul>
-            <li><strong class="highlight">Programming Languages:</strong> Python, C++, SQL, Bash, Matlab</li>
+            <li><strong class="highlight">Programming Languages:</strong> Python, SQL, Bash, Matlab, C++, Rust (learning), Golang (learning)</li>
             <li><strong class="highlight">Machine Learning & AI:</strong> TensorFlow, PyTorch, Scikit-learn, Model Deployment</li>
             <li><strong class="highlight">Software Development:</strong> System Design, Cloud Computing (AWS, IBM Watson), Linux, Windows, macOS</li>
             <li><strong class="highlight">Data Engineering:</strong> Big Data Analytics, NoSQL Databases, Data Modeling</li>
             <li><strong class="highlight">Signal Processing:</strong> EEG Analysis, Brain-Computer Interfaces, Electrical Engineering</li>
             <li><strong class="highlight">Other Tools:</strong> CAD, Microcontrollers, Experiment Design</li>
         </ul>
+        <a href="https://www.credly.com/users/samuel-louviot.e200ccc5">Creddly Profile</a>
     </div>
 </div>
+
+<div class="tui-section">
+    <div class="tui-section-header">
+        Publications
+    </div>
+    <div class="tui-section-content">
+        <p>1. <a href="https://doi.org/10.1016/j.brs.2021.11.001">Transcranial Electrical Stimulation generates electric fields in deep human brain structures</a> <em>Louviot, Samuel et al. Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation, Volume 15, Issue 1, 1 - 12</em></p>
+        <p>2. <a href="https://doi.org/10.1016/j.brs.2023.03.040">Transcranial direct current stimulation reduces intracerebrally-recorded epileptic seizures and behavioral disturbances</a> <em>Koessler, LaurentDmochowski, JacekVignal, Jean-PierreColnat-Coulbois, SophieTyvaert, Louise et al. Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation, Volume 16, Issue 2, 667 - 669</em></p>
 
 <div class="tui-section">
     <div class="tui-section-header">
@@ -193,15 +209,16 @@ permalink: /resume/
     }
 
     .highlight-position {
-        color: var(--red);
+        color: var(--light-green);
         font-weight: 700;
     }
     .pdf-link {
         display: inline-block;
         padding: 0.5rem 1rem;
+        color: var(--dark-green);
         border: 1px solid var(--dark-green);
         border-radius: 0px;
-        transition: all 0.2s ease;
+        transition: all 0.3s ease;
     }
 
     .pdf-link:hover {

@@ -6,27 +6,28 @@
     <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
     <style>
         :root {
             --bg_h: #000000;
             --bg:   #000000;
             --bg_s: #000000;
-            --bg1:  #161616;
+            --bg1:  #151515;
             --bg2:  #202020;
             --bg3:  #2a2a2a;
-            --bg4:  #343434;
+            --bg4:  #464646;
           
-            --fg:  #c4c4c4;
-            --fg1: #d8d8d8;
+            --fg:  #eaeaea;
+            --fg1: #b5e853;  /* Hacker theme's signature green */
             --fg2: #cccccc;
             --fg3: #c0c0c0;
             --fg4: #a8a8a8;
           
             --red:    #ff6666;
-            --green:  #5ffa8c;
-            --dark-green: #4a9718;
-            --light-green: #50fa7b;
+            --green:  #7fac2a;  /* Hacker theme's signature green */
+            --dark-green: #7aaf25;
+            --light-green: #b5e853;
             --yellow: #f1fa8c;
             --blue:   #7282b4;
             --purple: #bd93f9;
@@ -170,8 +171,13 @@
             box-sizing: border-box;
         }
 
+        .highlight {
+            color: var(--light-green);
+            max-width: 900px;
+            background-color: transparent;
+        }
         body {
-            font-family: 'IBM Plex Mono', monospace;
+            font-family: 'Sometype Mono', monospace;
             background-color: var(--bg_h);
             color: var(--fg1);
             line-height: 1.6;
@@ -181,14 +187,13 @@
         }
 
         .tui-window {
-            border: 1px solid var(--dark-green);
+            border: 1px solid var(--green);
             border-radius: 0px;
             overflow: hidden;
-            /*box-shadow: 0 0 10px var(--dark-green);*/
         }
 
         .tui-titlebar {
-            background-color: var(--dark-green);
+            background-color: var(--green);
             color: var(--bg_h);
             padding: 0.5rem 1rem;
             font-weight: bold;
@@ -215,6 +220,7 @@
             padding: 0rem;
             font-weight: 100;
 
+            color: var(--fg2);
             background-color: var(--bg_h);
         }
 
@@ -224,15 +230,16 @@
 
         .tui-section-header {
             background-color: var(--bg_h);
-            color: var(--green-dim);
+            color: var(--green);
             position: relative;
             display: block;
-            font-weight: 100;
+            font-weight: 500;
             font-size: 1.5rem;
-            border-top: 1px dashed var(--dark-green);
-            border-bottom: 1px dashed var(--dark-green);
+            border-top: 1px dashed var(--green);
+            border-bottom: 1px dashed var(--green);
             margin-top: 1rem;
             padding: 0rem 0rem;
+            font-family: 'Sometype Mono', monospace;
         }
         
         .tui-section-header::before {
@@ -258,19 +265,19 @@
         }
 
         a {
-            color: var(--green-dim);
+            color: var(--orange-dim);
             text-decoration: none;
             transition: color 0.2s ease;
         }
 
         a:hover {
             text-decoration: none;
-            color: var(--green);
-            text-shadow: 0 0 8px var(--green-dim);
+            color: var(--yellow);
+            text-shadow: 0 0 10px var(--dark-green);
         }
 
         h1, h2, h3 {
-            color: var(--dark-green);
+            color: var(--green);
             margin: 1.5rem 0 1rem 0;
         }
 
@@ -278,31 +285,10 @@
             margin-bottom: 1rem;
         }
 
-        code {
-            background-color: var(--bg1);
-            padding: 0.2rem 0.4rem;
-            border-radius: 0px;
-            color: var(--purple);
-            border: 1px solid var(--bg3);
-        }
-
-        pre {
-            background-color: var(--bg1);
-            padding: 1rem;
-            border-radius: 0px;
-            overflow-x: auto;
-            margin: 1rem 0;
-            border: 1px solid var(--bg3);
-        }
-
         .command-output {
             padding-left: 1rem;
             margin: 0.5rem 0;
             color: var(--fg2);
-        }
-
-        .highlight {
-            color: var(--green-dim);
         }
 
         .tui-menu {
@@ -345,6 +331,7 @@
             <a href="/blog">Blog</a>
             <a href="/projects">Projects</a>
             <a href="/resume">Resume</a>
+            <a href="/contact">Contact</a>
         </div>
 
         <div class="tui-content">
