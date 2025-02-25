@@ -10,6 +10,7 @@ Feel free to reach out using the form below. I'll get back to you as soon as pos
 You can also contact me on [LinkedIn](https://www.linkedin.com/in/samuel-louviot) or see my [GitHub](https://github.com/Sam54000).
 
 <form action="https://formspree.io/f/mpwqgbnd" method="POST">
+  <input type="hidden" name="_next" value="https://sam54000.github.io/contact/">
   <div style="margin-bottom: 20px;">
     <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
     <input class="input-field" type="email" id="email" name="email" required>
@@ -48,46 +49,4 @@ You can also contact me on [LinkedIn](https://www.linkedin.com/in/samuel-louviot
   .button:hover{
     background-color: var(--orange);
   }
-</style>
-<script>
-  var form = document.querySelector('form');
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var button = form.querySelector('button');
-    
-    button.disabled = true;
-    button.textContent = 'Sending...';
-    
-    fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      console.log('Response status:', response.status);
-      return response.json().then(data => {
-        console.log('Response data:', data);
-        if (response.ok) {
-          form.reset();
-          button.textContent = 'Message Sent!';
-          setTimeout(() => {
-            button.disabled = false;
-            button.textContent = 'Send Message';
-          }, 3000);
-        } else {
-          throw new Error(data.error || 'Submission failed');
-        }
-      });
-    }).catch(error => {
-      console.error('Detailed error:', error);
-      button.disabled = false;
-      if (error.message.includes('not activated')) {
-        button.textContent = 'Please Check Email to Activate';
-        alert('Please check your email to verify the form first. Formspree requires email verification for first-time use.');
-      } else {
-        button.textContent = 'Error! Try Again';
-      }
-    });
-  });
-</script> 
+</style> 
