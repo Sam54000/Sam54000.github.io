@@ -181,6 +181,18 @@ permalink: /resume/
 </div>
 <div class="tui-section">
     <div class="tui-section-header">
+        Collaborations
+    </div>
+    <div class="tui-section-content">
+        On a voluntary basis out of working hours, I have been working on the following projects:
+        <ul>
+            <li>Intracerebral investigation of Temporal Interference led by <a href="https://www.neurotechcenter.org/people/ncan-leaders/peter-brunner-phd">Dr. Peter Brunner</a> and <a href="https://www.neurotechcenter.org/people/ncan-trd-leaders/jon-t-willie-md-phd">Dr. Jon. T. Willie</a> at Washington University in St. Louis.</li>
+            <li>Investigation of the effect of Caffein compared to transcranial Alternative Current Stimulation (tACS) led by <a href="https://www.ccny.cuny.edu/profiles/marom-bikson">Dr. Marom Bikson</a> at City College of New York.</li>
+        </ul>
+    </div>
+</div>
+<div class="tui-section">
+    <div class="tui-section-header">
         Languages
     </div>
     <div class="tui-section-content">

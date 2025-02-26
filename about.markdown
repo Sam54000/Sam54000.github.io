@@ -21,7 +21,7 @@ permalink: /about/
             I discovered this term while working at the City College of New York under 
             the supervision of <a href="https://dmochow.github.io/about/">Prof. Jacek Dmochowski</a>, 
             and I found it aptly describes my profile.</p>
-        <p><strong class="highlight">Neural:</strong> I hold a PhD in Neuroscience, specialized in Human electrophysilogy, notably intracerebral (invasive) and surface (non-invasive) electroencephalography. You can find my research work <a href="https://docnum.univ-lorraine.fr/public/DDOC_T_2022_0102_LOUVIOT.pdf">here</a> (the first 25 pages are a summary in French, but the rest is in English). I did a postdoc at Weill Cornell Medicine | New York Presbyterian in Brain Stimulation and Brain Computer Interface.</p>
+        <p><strong class="highlight">Neural:</strong> I hold a PhD in Neuroscience, specialized in Human electrophysilogy, notably intracerebral (invasive) and surface (non-invasive) electroencephalography. You can find my research work <a href="https://docnum.univ-lorraine.fr/public/DDOC_T_2022_0102_LOUVIOT.pdf">here</a> (the first 25 pages are a summary in French, but the rest is in English). I did a postdoc at Weill Cornell Medicine | New York Presbyterian under the supervision of <a href="https://radiology.weill.cornell.edu/research/brain-health-imaging-institute-bhii/sudhin-shah-laboratory">Dr. Sudhin A. Shah</a> in Brain Stimulation and Brain Computer Interface. </p>
         <p><strong class="highlight">Engineer:</strong> I have a:
         <ul>
             <li>Master's degree in Biomedical Engineering, Cybernetics, Robotics, Softwares and Imaging for Medicine</li>
