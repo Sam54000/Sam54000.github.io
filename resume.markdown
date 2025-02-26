@@ -155,7 +155,7 @@ permalink: /resume/
             <li><strong class="highlight">Data Engineering:</strong> Big Data Analytics, NoSQL Databases, Data Modeling</li>
             <li><strong class="highlight">Signal Processing:</strong> EEG Analysis, Brain-Computer Interfaces, Electrical Engineering</li>
             <li><strong class="highlight">Python Libraries:</strong> Numpy, Scipy, Pandas, Polar, Matplotlib, Seaborn, Plotly, Bokeh, Scikit-learn, TensorFlow, PyTorch, Statsmodels, MNE-Python, pySpark, Flask</li>
-            <li><strong class="highlight">Other:</strong> CAD, Microcontrollers, Experiment Design</li>
+            <li><strong class="highlight">Other:</strong> CAD, Microcontrollers, Microcomputers, Embedded Systems, Docker, Git, GitHub, CI/CD, Agile</li>
         </ul>
         <a href="https://www.credly.com/users/samuel-louviot.e200ccc5">Creddly Profile</a>
     </div>
