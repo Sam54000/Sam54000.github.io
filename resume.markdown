@@ -148,12 +148,14 @@ permalink: /resume/
     </div>
     <div class="tui-section-content">
         <ul>
-            <li><strong class="highlight">Programming Languages:</strong> Python, SQL, Bash, Matlab, C++, Rust (learning), Golang (learning)</li>
+            <li><strong class="highlight">Programming Languages:</strong> Python, SQL, MySQL, PostgreSQL, Bash, Matlab, C++, Rust (learning), Golang (learning)</li>
+            <li><strong class="highlight">Web Development:</strong> HTML, CSS, JavaScript (learning), React (learning)</li>
             <li><strong class="highlight">Machine Learning & AI:</strong> TensorFlow, PyTorch, Scikit-learn, Model Deployment</li>
             <li><strong class="highlight">Software Development:</strong> System Design, Cloud Computing (AWS, IBM Watson), Linux, Windows, macOS</li>
             <li><strong class="highlight">Data Engineering:</strong> Big Data Analytics, NoSQL Databases, Data Modeling</li>
             <li><strong class="highlight">Signal Processing:</strong> EEG Analysis, Brain-Computer Interfaces, Electrical Engineering</li>
-            <li><strong class="highlight">Other Tools:</strong> CAD, Microcontrollers, Experiment Design</li>
+            <li><strong class="highlight">Python Libraries:</strong> Numpy, Scipy, Pandas, Polar, Matplotlib, Seaborn, Plotly, Bokeh, Scikit-learn, TensorFlow, PyTorch, Statsmodels, MNE-Python, pySpark, Flask</li>
+            <li><strong class="highlight">Other:</strong> CAD, Microcontrollers, Experiment Design</li>
         </ul>
         <a href="https://www.credly.com/users/samuel-louviot.e200ccc5">Creddly Profile</a>
     </div>
