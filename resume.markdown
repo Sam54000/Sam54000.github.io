@@ -5,7 +5,7 @@ permalink: /resume/
 ---
 <div class="tui-section">
     <div class="tui-section-content">
-        <strong class="highlight">Contact me:</strong> <a href="/contact">contact me</a><br>
+        <a href="/contact">>_ Contact me here _<</a><br>
         <strong class="highlight">Phone:</strong> (716) 203-5107<br>
         <strong class="highlight">LinkedIn:</strong> <a href="https://www.linkedin.com/in/samuel-louviot">linkedin.com/in/samuel-louviot</a><br>
         <strong class="highlight">GitHub:</strong> <a href="https://github.com/Sam54000">github.com/Sam54000</a><br>
@@ -166,7 +166,19 @@ permalink: /resume/
     <div class="tui-section-content">
         <p>1. <a href="https://doi.org/10.1016/j.brs.2021.11.001">Transcranial Electrical Stimulation generates electric fields in deep human brain structures</a> <em>Louviot, Samuel et al. Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation, Volume 15, Issue 1, 1 - 12</em></p>
         <p>2. <a href="https://doi.org/10.1016/j.brs.2023.03.040">Transcranial direct current stimulation reduces intracerebrally-recorded epileptic seizures and behavioral disturbances</a> <em>Koessler, LaurentDmochowski, JacekVignal, Jean-PierreColnat-Coulbois, SophieTyvaert, Louise et al. Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation, Volume 16, Issue 2, 667 - 669</em></p>
+    </div>
+</div>
 
+<div class="tui-section">
+    <div class="tui-section-header">
+        Doctoral Thesis
+    </div>
+    <div class="tui-section-content">
+        <p><a href="https://theses.fr/api/v1/document/2022LORR0102">
+            <strong>Biophysical and electrophysiological studies of transcranial electrical stimulation in human in-vivo using simultaneous stereoelectroencephalographic recordings in focal drug-resistant epilepsy and face recognition</strong>
+        </a></p>
+    </div>
+</div>
 <div class="tui-section">
     <div class="tui-section-header">
         Languages

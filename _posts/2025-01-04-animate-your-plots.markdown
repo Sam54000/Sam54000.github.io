@@ -29,10 +29,10 @@ These topics might be covered in another post.
 Despite my intention to keep this post simple, I still need to provide some 
 context about the data.
 
-# Subjects
+## Subjects
 We have a population of 22 subjects.
 
-# Brain States
+## Brain States
 1. The brain states consist of 8 co-activation patterns (CAP) over time, 
 forming a time series.
 2. Each subject has 8 brain-states.
@@ -41,7 +41,7 @@ The brain-states were resampled to a 3.8 Hz sampling rate.
 
 Each subject has 8 time-series.
 
-# EEG Data
+## EEG Data
 We have EEG dynamics over time for every frequency band from 1 Hz to 39 Hz, 
 with 1 Hz increments. This dynamic is captured through 61 electrodes. 
 Therefore, we have 61 * 39 = 2379 time-series per subject. The EEG data were 
