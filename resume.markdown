@@ -167,7 +167,7 @@ permalink: /resume/
     </div>
     <div class="tui-section-content">
         <p>1. <a href="https://doi.org/10.1016/j.brs.2021.11.001">Transcranial Electrical Stimulation generates electric fields in deep human brain structures</a> <em>Louviot, Samuel et al. Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation, Volume 15, Issue 1, 1 - 12</em></p>
-        <p>2. <a href="https://doi.org/10.1016/j.brs.2023.03.040">Transcranial direct current stimulation reduces intracerebrally-recorded epileptic seizures and behavioral disturbances</a> <em>Koessler, LaurentDmochowski, JacekVignal, Jean-PierreColnat-Coulbois, SophieTyvaert, Louise et al. Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation, Volume 16, Issue 2, 667 - 669</em></p>
+        <p>2. <a href="https://doi.org/10.1016/j.brs.2023.03.040">Transcranial direct current stimulation reduces intracerebrally-recorded epileptic seizures and behavioral disturbances</a> <em>Koessler, Laurent; Louviot, Samuel; Dmochowski, Jacek; Vignal, Jean-Pierre; Colnat-Coulbois, Sophie; Tyvaert, Louise et al. Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation, Volume 16, Issue 2, 667 - 669</em></p>
     </div>
 </div>
 
