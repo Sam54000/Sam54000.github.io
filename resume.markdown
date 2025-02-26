@@ -19,10 +19,11 @@ permalink: /resume/
     </div>
     <div class="tui-section-content">
         I am orienting my career towards software and AI/ML engineering. I like
-        to build tools and provide solutions to tackle complex technical and/or scientific
-        challenges. I am looking for a position that will challenge. The perfect
-        working environment for me is where learning is one of the main focus and
-        encouraged.
+        building tools and providing solutions to tackle complex technical 
+        and/or scientific challenges. I have a wide range of skills acquired 
+        from my experience and a persistent learning mindset making me adaptable 
+        to new environments. I am looking for a position where learning is one of 
+        the main focus.
     </div>
 </div>
 
