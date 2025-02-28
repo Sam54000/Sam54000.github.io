@@ -6,8 +6,8 @@ permalink: /contact/
 
 # Get in Touch
 
-Feel free to reach out using the form below. I'll get back to you as soon as possible
-You can also contact me on [LinkedIn](https://www.linkedin.com/in/samuel-louviot) or see my [GitHub](https://github.com/Sam54000).
+Feel free to reach out using the form below, I'll get back to you as soon as possible.
+<br>You can also contact me on [LinkedIn](https://www.linkedin.com/in/samuel-louviot) or see my [GitHub](https://github.com/Sam54000).
 
 <form action="https://formspree.io/f/mpwqgbnd" method="POST">
   <input type="hidden" name="_next" value="https://sam54000.github.io/contact/">

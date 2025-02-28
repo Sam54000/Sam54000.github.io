@@ -148,16 +148,11 @@ permalink: /resume/
     </div>
     <div class="tui-section-content">
         <ul>
-            <li><strong class="highlight">Programming Languages:</strong> Python, SQL, MySQL, PostgreSQL, Bash, Matlab, C++, Rust (learning), Golang (learning)</li>
-            <li><strong class="highlight">Web Development:</strong> HTML, CSS, JavaScript (learning), React (learning)</li>
-            <li><strong class="highlight">Machine Learning & AI:</strong> TensorFlow, PyTorch, Scikit-learn, Model Deployment</li>
-            <li><strong class="highlight">Software Development:</strong> System Design, Cloud Computing (AWS, IBM Watson), Linux, Windows, macOS</li>
-            <li><strong class="highlight">Data Engineering:</strong> Big Data Analytics, NoSQL Databases, Data Modeling</li>
-            <li><strong class="highlight">Signal Processing:</strong> EEG Analysis, Brain-Computer Interfaces, Electrical Engineering</li>
-            <li><strong class="highlight">Python Libraries:</strong> Numpy, Scipy, Pandas, Polar, Matplotlib, Seaborn, Plotly, Bokeh, Scikit-learn, TensorFlow, PyTorch, Statsmodels, MNE-Python, pySpark, Flask</li>
-            <li><strong class="highlight">Other:</strong> CAD, Microcontrollers, Microcomputers, Embedded Systems, Docker, Git, GitHub, CI/CD, Agile</li>
+            <li><strong class="highlight">Programming Languages:</strong> Python, SQL, MySQL, PostgreSQL, Bash, MATLAB, C++, Rust (learning), golang (learning), HTML, CSS, JavaScript (learning), React (learning)</li>
+            <li><strong class="highlight">Python Libraries:</strong> NumPy, SciPy, pandas, Polars, matplotlib, seaborn, plotly, Bokeh, scikit-learn, TensorFlow, PyTorch, statsmodels, MNE-Python, pySpark, Flask</li>
+            <li><strong class="highlight">Other:</strong> Signal Processing, Big Data Analytics, NoSQL Databases, Time-series, System Design, Cloud Computing (AWS, IBM Watson), Linux, Windows, macOS, CAD, Microcontrollers, Microcomputers, Embedded Systems, Docker, Git, GitHub, CI/CD, Agile</li>
         </ul>
-        <a href="https://www.credly.com/users/samuel-louviot.e200ccc5">Creddly Profile</a>
+        <a href="https://www.credly.com/users/samuel-louviot.e200ccc5">>_More_<</a>
     </div>
 </div>
 
