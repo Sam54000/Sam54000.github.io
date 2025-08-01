@@ -5,9 +5,10 @@ title: Home
 <div class="tui-section">
     <div class="tui-section-content">
         <strong class="main-title">Dr. Samuel Louviot, PhD</strong>
-        <span class="subtitle">Scientific Software Engineer | Neural Engineer</span>
-            <p>I am a Neuroscientist specializing in Software Engineering. I
-            build tools and applications to solve technical and scientific challenges
+        <span class="subtitle">Neuroscientist</span>
+            <p>I am a neuroscientist who has experience and skills in a vast 
+            spectrum of engineering domains. I like building tools and 
+            applications to solve technical and scientific challenges
             in neuroscience.</p>
     </div>
 </div>
